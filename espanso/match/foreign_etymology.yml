@@ -1,0 +1,33 @@
+matches:
+  - trigger: "'resume"
+    replace: "résumé"
+    word: true
+    propagate_case: true
+  - trigger: "pokemon"
+    replace: "pokémon"
+    word: true
+    propagate_case: true
+  - trigger: "naive"
+    replace: "naïve"
+    word: true
+    propagate_case: true
+  - triggers: ["'e/", "'/e"]
+    replace: "é"
+    word: true
+    propagate_case: true
+  - triggers: ["'l/", "'/l"]
+    replace: "ł"
+    word: true
+    propagate_case: true
+  - trigger: "deja vu"
+    replace: "déjà vu"
+    word: true
+    propagate_case: true
+  - triggers: ["'u:", "':u"]
+    replace: "ü"
+    word: true
+    propagate_case: true
+  - trigger: "'uber"
+    replace: "über"
+    word: true
+    propagate_case: true

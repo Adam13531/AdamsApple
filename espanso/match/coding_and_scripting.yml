@@ -1,0 +1,37 @@
+matches:
+  - trigger: "'ytspeed"
+    replace: "document.getElementsByTagName(\"video\")[0].playbackRate = 2.5"
+    word: true
+  - trigger: "'binsh"
+    replace: "#!/bin/sh"
+    word: true
+  - trigger: "'favicon"
+    replace: "document.querySelector('link[rel*=\"icon\"]').href = \"//via.placeholder.com/32/F00\";"
+    word: true
+  - trigger: "'gpom"
+    replace: "git pull origin master --rebase"
+    word: true
+  - trigger: "'gitgrep"
+    replace: "git rev-list --all | xargs git grep"
+    word: true
+  - trigger: "'sso"
+    replace: "site:stackoverflow.com"
+    word: true
+  - trigger: "'src"
+    replace: "site:reddit.com"
+    word: true
+  - trigger: "'sgh"
+    replace: "site:github.com"
+    word: true
+  - trigger: "'gomain"
+    replace: "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"hello world\")\n}"
+    word: true
+  - trigger: "'gotest"
+    replace: "import (\n \"testing\"\n \"github.com/google/go-cmp/cmp\"\n )\n \n func TestResultItemsToJSON(t *testing.T) {\n testDefinitions := []struct {\n testName  string\n input     string\n want      string\n wantError bool\n }{\n {\n testName: \"capitalized string\",\n input:    \"HELLO WORLD\",\n want:     \"howdy\",\n },\n {\n testName:  \"improper string\",\n input:     \"(hello)\",\n wantError: true,\n },\n }\n \n for _, tc := range testDefinitions {\n t.Run(tc.testName, func(t *testing.T) {\n got, err := functionToTest(tc.input)\n \n if err != nil {\n if !tc.wantError {\n t.Fatalf(\"functionToTest got err (%v), want success\", err)\n }\n return\n }\n \n if err == nil && tc.wantError {\n t.Fatalf(\"functionToTest got success, want error\")\n }\n \n if diff := cmp.Diff(got, tc.want); diff != \"\" {\n t.Errorf(\"functionToTest diff (-want +got):\\n%s\", diff)\n }\n })\n }\n }\n"
+    word: true
+  - trigger: "'dockerrun"
+    replace: "docker run --entrypoint /bin/bash -it someimage"
+    word: true
+  - trigger: "'aliask"
+    replace: "alias k=kubectl"
+    word: true

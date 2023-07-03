@@ -1,0 +1,45 @@
+/*
+Find out more here: https://gist.github.com/trusktr/1e5e516df4e8032cbc3d
+
+
+Copy/pasted from there:
+
+
+Here is a rough cheatsheet for syntax.
+Key Modifiers
+^ : Ctrl
+$ : Shift
+~ : Option (Alt)
+@ : Command (Apple)
+# : Numeric Keypad
+
+
+Non-Printable Key Codes
+
+
+Standard
+Up Arrow:     \UF700        Backspace:    \U0008        F1:           \UF704
+Down Arrow:   \UF701        Tab:          \U0009        F2:           \UF705
+Left Arrow:   \UF702        Escape:       \U001B        F3:           \UF706
+Right Arrow:  \UF703        Enter:        \U000A        ...
+Insert:       \UF727        Page Up:      \UF72C
+Delete:       \UF728        Page Down:    \UF72D
+Home:         \UF729        Print Screen: \UF72E
+End:          \UF72B        Scroll Lock:  \UF72F
+Break:        \UF732        Pause:        \UF730
+SysReq:       \UF731        Menu:         \UF735
+Help:         \UF746
+*/
+
+
+{
+  "\UF729"  = moveToBeginningOfParagraph:; // home
+  "\UF72B"  = moveToEndOfParagraph:; // end
+  "$\UF729" = moveToBeginningOfParagraphAndModifySelection:; // shift-home
+  "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end
+  "@\UF729" = moveToBeginningOfDocument:; // cmd-home
+  "@\UF72B" = moveToEndOfDocument:; // cmd-end
+  "@$\UF729" = moveToBeginningOfDocumentAndModifySelection:; // cmd-shift-home
+  "@$\UF72B" = moveToEndOfDocumentAndModifySelection:; // cmd-shift-end
+  "^@\UF701" = "noop:"; // cmd+ctrl+down - do nothing instead of BONK - https://github.com/adobe/brackets/issues/2419#issuecomment-186619537
+}

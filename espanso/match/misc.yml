@@ -1,0 +1,22 @@
+matches:
+  - trigger: "'problema"
+    replace: "https://imgur.com/gallery/rQIb4Vw"
+    word: true
+
+  # This is sort of obvious, but I like the reminder every once in a while.
+  - trigger: "'ambiguity"
+    replace: "[1] enumerate questions [2] answer them [3] process answers [4] repeat"
+    word: true
+
+  # Opens Espanso folder in my GUI editor ("s")
+  #
+  # Just copying this path here since I'll probably forget that I made
+  # this and then search through my shortcuts to figure out if it's
+  # there: "/Users/adam/Library/Application Support/espanso"
+  - trigger: "'edit"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo s \\\"$CONFIG\\\""

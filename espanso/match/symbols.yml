@@ -1,0 +1,169 @@
+matches:
+  - trigger: "'em"
+    replace: "—"
+    word: true
+    propagate_case: true
+  - triggers: ["'cent", "'cents"]
+    replace: "¢"
+    word: true
+    propagate_case: true
+  - trigger: "'euro"
+    replace: "€"
+    word: true
+    propagate_case: true
+  - trigger: "'flat"
+    replace: "♭"
+    word: true
+    propagate_case: true
+  - trigger: "'omega"
+    replace: "Ω"
+    word: true
+    propagate_case: true
+  - trigger: "'r"
+    replace: "→"
+    word: true
+    propagate_case: true
+  - trigger: "'l"
+    replace: "←"
+    word: true
+    propagate_case: true
+  - trigger: "'u"
+    replace: "↑"
+    word: true
+    propagate_case: true
+  - trigger: "'d"
+    replace: "↓"
+    word: true
+    propagate_case: true
+  - trigger: "'ur"
+    replace: "↗︎"
+    word: true
+    propagate_case: true
+  - trigger: "'ul"
+    replace: "↖"
+    word: true
+    propagate_case: true
+  - trigger: "'dr"
+    replace: "↘"
+    word: true
+    propagate_case: true
+  - trigger: "'dl"
+    replace: "↙"
+    word: true
+    propagate_case: true
+  - trigger: "'lte"
+    replace: "≤"
+    word: true
+    propagate_case: true
+  - trigger: "'gte"
+    replace: "≥"
+    word: true
+    propagate_case: true
+  - trigger: "'tm"
+    replace: "™"
+    word: true
+    propagate_case: true
+  - triggers: ["'copyright", "'copy"]
+    replace: "©"
+    word: true
+    propagate_case: true
+  - triggers: ["'option", "'opt", "'alt"]
+    replace: "⌥"
+    word: true
+    propagate_case: true
+  - trigger: "'cmd"
+    replace: "⌘"
+    word: true
+    propagate_case: true
+  - triggers: ["'ctrl", "'control"]
+    replace: "⌃"
+    word: true
+    propagate_case: true
+  - trigger: "'shift"
+    replace: "⇧"
+    word: true
+    propagate_case: true
+  - triggers: ["'12", "'half"]
+    replace: "½"
+    word: true
+    propagate_case: true
+  - triggers: ["'14", "'quarter"]
+    replace: "¼"
+    word: true
+    propagate_case: true
+  - trigger: "'34"
+    replace: "¾"
+    word: true
+    propagate_case: true
+  - trigger: "'1"
+    replace: "¹"
+    word: true
+    propagate_case: true
+  - triggers: ["'sq", "'squared", "'2"]
+    replace: "²"
+    word: true
+    propagate_case: true
+  - triggers: ["'cube", "'cubed", "'3"]
+    replace: "³"
+    word: true
+    propagate_case: true
+  - trigger: "'bb"
+    replace: "•"
+    word: true
+    propagate_case: true
+  - trigger: "'bbb"
+    replace: "○"
+    word: true
+    propagate_case: true
+  - triggers: ["'+-", "'-+"]
+    replace: "±"
+    word: true
+    propagate_case: true
+  - trigger: "'~"
+    replace: "≈"
+    word: true
+    propagate_case: true
+  - trigger: "(;u"
+    replace: "(↑"
+    word: true
+    propagate_case: true
+  - trigger: "'..."
+    replace: "…"
+    word: true
+    propagate_case: true
+  - trigger: "'deg"
+    replace: "°"
+    word: true
+    propagate_case: true
+  - trigger: "'degf"
+    replace: "°F"
+    word: true
+    propagate_case: true
+  - trigger: "'degc"
+    replace: "°C"
+    word: true
+    propagate_case: true
+  - trigger: "'15"
+    replace: "1½"
+    word: true
+    propagate_case: true
+  - trigger: "'23"
+    replace: "⅔"
+    word: true
+    propagate_case: true
+  - triggers: ["'lr", "'rl"]
+    replace: "↔"
+    word: true
+    propagate_case: true
+  - triggers: ["'ud", "'du"]
+    replace: "↕"
+    word: true
+    propagate_case: true
+  - trigger: "'13"
+    replace: "⅓"
+    word: true
+    propagate_case: true
+  - trigger: "'18"
+    replace: "⅛"
+    word: true
+    propagate_case: true

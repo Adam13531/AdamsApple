@@ -1,0 +1,116 @@
+matches:
+  - trigger: "tutorail"
+    replace: "tutorial"
+    word: true
+    propagate_case: true
+  - trigger: "emualtor"
+    replace: "emulator"
+    word: true
+    propagate_case: true
+  - trigger: "descendant"
+    replace: "descendent"
+    word: true
+    propagate_case: true
+  - triggers: ["varaible", "varialbe"]
+    replace: "variable"
+    word: true
+    propagate_case: true
+  - trigger: "correpsonding"
+    replace: "corresponding"
+    word: true
+    propagate_case: true
+  - trigger: "hoemwork"
+    replace: "homework"
+    word: true
+    propagate_case: true
+  - trigger: "leran"
+    replace: "learn"
+    word: true
+    propagate_case: true
+  - trigger: "nad"
+    replace: "and"
+    word: true
+    propagate_case: true
+  - triggers: ["teh", "hte"]
+    replace: "the"
+    word: true
+    propagate_case: true
+  - trigger: "whiel"
+    replace: "while"
+    word: true
+    propagate_case: true
+  - trigger: "hlep"
+    replace: "help"
+    word: true
+    propagate_case: true
+  - trigger: "becuase"
+    replace: "because"
+    word: true
+    propagate_case: true
+  - trigger: "porblem"
+    replace: "problem"
+    word: true
+    propagate_case: true
+  - trigger: "toher"
+    replace: "other"
+    word: true
+    propagate_case: true
+  - trigger: "tohers"
+    replace: "others"
+    word: true
+    propagate_case: true
+  - trigger: "taht"
+    replace: "that"
+    word: true
+    propagate_case: true
+  - trigger: "dcoker"
+    replace: "docker"
+    word: true
+    propagate_case: true
+  - trigger: "debina"
+    replace: "debian"
+    word: true
+    propagate_case: true
+  - triggers: ["quetsion", "qusetion"]
+    replace: "question"
+    word: true
+    propagate_case: true
+  - triggers: ["quetsions", "qusetions"]
+    replace: "questions"
+    word: true
+    propagate_case: true
+  - trigger: "impedence"
+    replace: "impedance"
+    word: true
+    propagate_case: true
+  - trigger: "1:!"
+    replace: "1:1"
+    word: true
+    propagate_case: true
+  - trigger: "sinple"
+    replace: "simple"
+    word: true
+    propagate_case: true
+  - trigger: "imposter"
+    replace: "impostor"
+    word: true
+    propagate_case: true
+  - trigger: "GotHub"
+    replace: "GitHub"
+    word: true
+  - trigger: "yalm"
+    replace: "yaml"
+    word: true
+    propagate_case: true
+  - trigger: "verison"
+    replace: "version"
+    word: true
+    propagate_case: true
+  - trigger: "shoudl"
+    replace: "should"
+    word: true
+    propagate_case: true
+  - trigger: "gonig"
+    replace: "going"
+    word: true
+    propagate_case: true

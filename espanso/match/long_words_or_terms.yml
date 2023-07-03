@@ -1,0 +1,773 @@
+matches:
+  - trigger: "'dd"
+    replace: "design document"
+    word: true
+    propagate_case: true
+  - trigger: "'dds"
+    replace: "design documents"
+    word: true
+    propagate_case: true
+  - trigger: "'k"
+    replace: "Kubernetes"
+    word: true
+    propagate_case: true
+  - trigger: "'authn"
+    replace: "authentication"
+    word: true
+    propagate_case: true
+  - trigger: "'authz"
+    replace: "authorization"
+    word: true
+    propagate_case: true
+  - trigger: "'cidr"
+    replace: "Classless Inter-Domain Routing"
+    word: true
+    propagate_case: true
+  - trigger: "'tf"
+    replace: "Terraform"
+    word: true
+    propagate_case: true
+  - trigger: "'fa"
+    replace: "FontAwesome"
+    word: true
+    propagate_case: true
+  - triggers: ["'vsc", "'vscode"]
+    replace: "Visual Studio Code"
+    word: true
+    propagate_case: true
+  - trigger: "'gh"
+    replace: "GitHub"
+    word: true
+    propagate_case: true
+  - trigger: "'yt"
+    replace: "YouTube"
+    word: true
+    propagate_case: true
+  - trigger: "'ooc"
+    replace: "out of curiosity"
+    word: true
+    propagate_case: true
+  - trigger: "'dsl"
+    replace: "domain-specific language"
+    word: true
+    propagate_case: true
+  - trigger: "'dsls"
+    replace: "domain-specific languages"
+    word: true
+    propagate_case: true
+  - trigger: "'laf"
+    replace: "look and feel"
+    word: true
+    propagate_case: true
+  - trigger: "'di"
+    replace: "dependency injection"
+    word: true
+    propagate_case: true
+  - trigger: "'wd"
+    replace: "working directory"
+    word: true
+    propagate_case: true
+  - trigger: "'cwd"
+    replace: "current working directory"
+    word: true
+    propagate_case: true
+  - triggers: ["'e", "'env"]
+    replace: "environment"
+    word: true
+    propagate_case: true
+  - triggers: ["'es", "'envs"]
+    replace: "environments"
+    word: true
+    propagate_case: true
+  - trigger: "'ev"
+    replace: "environment variable"
+    word: true
+    propagate_case: true
+  - trigger: "'evs"
+    replace: "environment variables"
+    word: true
+    propagate_case: true
+  - trigger: "'npe"
+    replace: "NullPointerException"
+    word: true
+    propagate_case: true
+  - trigger: "'emea"
+    replace: "Europe, Middle East, and Africa"
+    word: true
+    propagate_case: true
+  - trigger: "'ci"
+    replace: "continuous integration"
+    word: true
+    propagate_case: true
+  - trigger: "'kt"
+    replace: "Kotlin"
+    word: true
+    propagate_case: true
+  - trigger: "'js"
+    replace: "JavaScript"
+    word: true
+    propagate_case: true
+  - trigger: "'ts"
+    replace: "TypeScript"
+    word: true
+    propagate_case: true
+  - trigger: "'lb"
+    replace: "load balancer"
+    word: true
+    propagate_case: true
+  - trigger: "'lbing"
+    replace: "load balancing"
+    word: true
+    propagate_case: true
+  - trigger: "'alb"
+    replace: "Application Load Balancer"
+    word: true
+    propagate_case: true
+  - trigger: "'elb"
+    replace: "Elastic Load Balancer"
+    word: true
+    propagate_case: true
+  - trigger: "'az"
+    replace: "availability zone"
+    word: true
+    propagate_case: true
+  - trigger: "'infra"
+    replace: "infrastructure"
+    word: true
+    propagate_case: true
+  - trigger: "'dep"
+    replace: "dependency"
+    word: true
+    propagate_case: true
+  - trigger: "'deps"
+    replace: "dependencies"
+    word: true
+    propagate_case: true
+  - trigger: "'ahk"
+    replace: "AutoHotkey"
+    word: true
+    propagate_case: true
+  - trigger: "'sg"
+    replace: "security group"
+    word: true
+    propagate_case: true
+  - trigger: "'ga"
+    replace: "Google Analytics"
+    word: true
+    propagate_case: true
+  - trigger: "'ij"
+    replace: "IntelliJ"
+    word: true
+    propagate_case: true
+  - trigger: "'trx"
+    replace: "transaction"
+    word: true
+    propagate_case: true
+  - trigger: "'alpha"
+    replace: "abcdefghijklmnopqrstuvwxyz"
+    word: true
+    propagate_case: true
+  - trigger: "'gc"
+    replace: "garbage collection"
+    word: true
+    propagate_case: true
+  - trigger: "'fk"
+    replace: "foreign key"
+    word: true
+    propagate_case: true
+  - trigger: "'pk"
+    replace: "primary key"
+    word: true
+    propagate_case: true
+  - trigger: "'doc"
+    replace: "documentation"
+    word: true
+    propagate_case: true
+  - trigger: "'docs"
+    replace: "documentation"
+    word: true
+    propagate_case: true
+  - trigger: "convo"
+    replace: "conversation"
+    word: true
+    propagate_case: true
+  - trigger: "convos"
+    replace: "conversations"
+    word: true
+    propagate_case: true
+  - trigger: "'ai"
+    replace: "&Action item -"
+    word: true
+    propagate_case: true
+  - trigger: "'convo"
+    replace: "conversation"
+    word: true
+    propagate_case: true
+  - trigger: "'convos"
+    replace: "conversations"
+    word: true
+    propagate_case: true
+  - trigger: "'te"
+    replace: "TextExpander"
+    word: true
+    propagate_case: true
+  - trigger: "'so"
+    replace: "StackOverflow"
+    word: true
+    propagate_case: true
+  - trigger: "'notes"
+    replace: "https://notes.adamlearns.com/"
+    word: true
+    propagate_case: true
+  - trigger: "'i"
+    replace: "infrastructure"
+    word: true
+    propagate_case: true
+  - trigger: "'mgt"
+    replace: "management"
+    word: true
+    propagate_case: true
+  - trigger: "'3p"
+    replace: "third-party"
+    word: true
+    propagate_case: true
+  - trigger: "'3P"
+    replace: "Third-party"
+    word: true
+    propagate_case: true
+  - trigger: "'asyncly"
+    replace: "asynchronously"
+    word: true
+    propagate_case: true
+  - trigger: "asyncly"
+    replace: "asynchronously"
+    word: true
+    propagate_case: true
+  - trigger: "'syncly"
+    replace: "synchronously"
+    word: true
+    propagate_case: true
+  - trigger: "syncly"
+    replace: "synchronously"
+    word: true
+    propagate_case: true
+  - trigger: "'appts"
+    replace: "appointments"
+    word: true
+    propagate_case: true
+  - trigger: "'appt"
+    replace: "appointment"
+    word: true
+    propagate_case: true
+  - trigger: "'cd"
+    replace: "continuous delivery"
+    word: true
+    propagate_case: true
+  - trigger: "'1p"
+    replace: "first-party"
+    word: true
+    propagate_case: true
+  - trigger: "'1P"
+    replace: "First-party"
+    word: true
+    propagate_case: true
+  - trigger: "'alap"
+    replace: "as little as possible"
+    word: true
+    propagate_case: true
+  - trigger: "'amap"
+    replace: "as much as possible"
+    word: true
+    propagate_case: true
+  - trigger: "'asap"
+    replace: "as soon as possible"
+    word: true
+    propagate_case: true
+  - triggers: ["'aqap", "aqap"]
+    replace: "as quickly as possible"
+    word: true
+    propagate_case: true
+  - trigger: "'afap"
+    replace: "as fast as possible"
+    word: true
+    propagate_case: true
+  - trigger: "'vulns"
+    replace: "vulnerabilities"
+    word: true
+    propagate_case: true
+  - trigger: "'vuln"
+    replace: "vulnerability"
+    word: true
+    propagate_case: true
+  - trigger: "'mutex"
+    replace: "mutually exclusive"
+    word: true
+    propagate_case: true
+  - trigger: "'nvm"
+    replace: "never mind"
+    word: true
+    propagate_case: true
+  - trigger: "'o"
+    replace: "organization"
+    word: true
+    propagate_case: true
+  - triggers: ["'os", "'orgs"]
+    replace: "organizations"
+    word: true
+    propagate_case: true
+  - trigger: "'oal"
+    replace: "organizational"
+    word: true
+    propagate_case: true
+  - triggers: ["'a", "'arg"]
+    replace: "argument"
+    word: true
+    propagate_case: true
+  - triggers: ["'as", "'args"]
+    replace: "arguments"
+    word: true
+    propagate_case: true
+  - trigger: "'dir"
+    replace: "directory"
+    word: true
+    propagate_case: true
+  - trigger: "'var"
+    replace: "variable"
+    word: true
+    propagate_case: true
+  - trigger: "'vars"
+    replace: "variables"
+    word: true
+    propagate_case: true
+  - trigger: "'misc"
+    replace: "miscellaneous"
+    word: true
+    propagate_case: true
+  - trigger: "'impl"
+    replace: "implementation"
+    word: true
+    propagate_case: true
+  - trigger: "'impls"
+    replace: "implementations"
+    word: true
+    propagate_case: true
+  - trigger: "'req"
+    replace: "requirement"
+    word: true
+    propagate_case: true
+  - triggers: ["'reqs", "reqs"]
+    replace: "requirements"
+    word: true
+    propagate_case: true
+  - trigger: "'obj"
+    replace: "objective"
+    word: true
+    propagate_case: true
+  - trigger: "'objs"
+    replace: "objectives"
+    word: true
+    propagate_case: true
+  - trigger: "ackd"
+    replace: "acknowledged"
+    word: true
+    propagate_case: true
+  - trigger: "'wlb"
+    replace: "work-life balance"
+    word: true
+    propagate_case: true
+  - trigger: "contro"
+    replace: "controversy"
+    word: true
+    propagate_case: true
+  - trigger: "contros"
+    replace: "controversies"
+    word: true
+    propagate_case: true
+  - trigger: "'parens"
+    replace: "parentheses"
+    word: true
+    propagate_case: true
+  - trigger: "'paren"
+    replace: "parenthesis"
+    word: true
+    propagate_case: true
+  - trigger: "'rep"
+    replace: "reputation"
+    word: true
+    propagate_case: true
+  - trigger: "preso"
+    replace: "presentation"
+    word: true
+    propagate_case: true
+  - trigger: "presos"
+    replace: "presentations"
+    word: true
+    propagate_case: true
+  - trigger: "'xp"
+    replace: "experience"
+    word: true
+    propagate_case: true
+  - trigger: "'exp"
+    replace: "experience"
+    word: true
+    propagate_case: true
+  - trigger: "'xps"
+    replace: "experiences"
+    word: true
+    propagate_case: true
+  - trigger: "'gvk"
+    replace: "Group Version Kind"
+    word: true
+    propagate_case: true
+  - trigger: "'we"
+    replace: "whatever"
+    word: true
+    propagate_case: true
+  - trigger: "'fg"
+    replace: "foreground"
+    word: true
+    propagate_case: true
+  - trigger: "'bg"
+    replace: "background"
+    word: true
+    propagate_case: true
+  - trigger: "'vm"
+    replace: "virtual machine"
+    word: true
+    propagate_case: true
+  - trigger: "'vms"
+    replace: "virtual machines"
+    word: true
+    propagate_case: true
+  - trigger: "'ais"
+    replace: "action items"
+    word: true
+    propagate_case: true
+  - trigger: "'ties"
+    replace: "technologies"
+    word: true
+    propagate_case: true
+  - trigger: "'t"
+    replace: "technology"
+    word: true
+    propagate_case: true
+  - trigger: "'ctor"
+    replace: "constructor"
+    word: true
+    propagate_case: true
+  - trigger: "'eo"
+    replace: "each other"
+    word: true
+    propagate_case: true
+  - trigger: "'orch"
+    replace: "orchestration"
+    word: true
+    propagate_case: true
+  - trigger: "'prop"
+    replace: "property"
+    word: true
+    propagate_case: true
+  - trigger: "'props"
+    replace: "properties"
+    word: true
+    propagate_case: true
+  - triggers: ["'v1", "'vo"]
+    replace: "everyone"
+    word: true
+    propagate_case: true
+  - triggers: ["philo", "'philo"]
+    replace: "philosophy"
+    word: true
+    propagate_case: true
+  - triggers: ["philos", "'philos"]
+    replace: "philosophies"
+    word: true
+    propagate_case: true
+  - trigger: "'spec"
+    replace: "specification"
+    word: true
+    propagate_case: true
+  - trigger: "'specs"
+    replace: "specifications"
+    word: true
+    propagate_case: true
+  - triggers: ["opp", "'opp"]
+    replace: "opportunity"
+    word: true
+    propagate_case: true
+  - triggers: ["opps", "'opps"]
+    replace: "opportunities"
+    word: true
+    propagate_case: true
+  - trigger: "'vis"
+    replace: "visibility"
+    word: true
+    propagate_case: true
+  - trigger: "'dirs"
+    replace: "directories"
+    word: true
+    propagate_case: true
+  - trigger: "'fb"
+    replace: "feedback"
+    word: true
+    propagate_case: true
+  - triggers: ["'mgr", "mgr"]
+    replace: "manager"
+    word: true
+    propagate_case: true
+  - trigger: "'mgrs"
+    replace: "managers"
+    word: true
+    propagate_case: true
+  - trigger: "'hier"
+    replace: "hierarchy"
+    word: true
+    propagate_case: true
+  - trigger: "'wrt"
+    replace: "with respect to"
+    word: true
+    propagate_case: true
+  - trigger: "'config"
+    replace: "configuration"
+    word: true
+    propagate_case: true
+  - trigger: "'atm"
+    replace: "at the moment"
+    word: true
+    propagate_case: true
+  - trigger: "'cred"
+    replace: "credential"
+    word: true
+    propagate_case: true
+  - trigger: "'creds"
+    replace: "credentials"
+    word: true
+    propagate_case: true
+  - trigger: "'soc"
+    replace: "stream of consciousness"
+    word: true
+    propagate_case: true
+  - trigger: "'mod"
+    replace: "modification"
+    word: true
+    propagate_case: true
+  - trigger: "'mods"
+    replace: "modifications"
+    word: true
+    propagate_case: true
+  - trigger: "'retro"
+    replace: "retrospective"
+    word: true
+    propagate_case: true
+  - triggers: ["'retros", "retros"]
+    replace: "retrospectives"
+    word: true
+    propagate_case: true
+  - trigger: "'utd"
+    replace: "up-to-date"
+    word: true
+    propagate_case: true
+  - trigger: "'perm"
+    replace: "permission"
+    word: true
+    propagate_case: true
+  - trigger: "'perms"
+    replace: "permissions"
+    word: true
+    propagate_case: true
+  - trigger: "reco"
+    replace: "recommendation"
+    word: true
+    propagate_case: true
+  - trigger: "recos"
+    replace: "recommendations"
+    word: true
+    propagate_case: true
+  - trigger: "'mgmt"
+    replace: "management"
+    word: true
+    propagate_case: true
+  - trigger: "'e2e"
+    replace: "end-to-end"
+    word: true
+    propagate_case: true
+  - trigger: "'ood"
+    replace: "out-of-date"
+    word: true
+    propagate_case: true
+  - trigger: "'poc"
+    replace: "point of contact"
+    word: true
+    propagate_case: true
+  - trigger: "'proof"
+    replace: "proof of concept"
+    word: true
+    propagate_case: true
+  - trigger: "uptodate"
+    replace: "up-to-date"
+    word: true
+    propagate_case: true
+  - trigger: "outofdate"
+    replace: "out-of-date"
+    word: true
+    propagate_case: true
+  - triggers: ["prio", "'prio"]
+    replace: "priority"
+    word: true
+    propagate_case: true
+  - triggers: ["'prios", "prios"]
+    replace: "priorities"
+    word: true
+    propagate_case: true
+  - trigger: "'perf"
+    replace: "performance"
+    word: true
+    propagate_case: true
+  - trigger: "collabo"
+    replace: "collaboration"
+    word: true
+    propagate_case: true
+  - trigger: "collabos"
+    replace: "collaborations"
+    word: true
+    propagate_case: true
+  - trigger: "'arch"
+    replace: "architecture"
+    word: true
+    propagate_case: true
+  - trigger: "'sme"
+    replace: "subject-matter expert"
+    word: true
+    propagate_case: true
+  - trigger: "'smes"
+    replace: "subject-matter experts"
+    word: true
+    propagate_case: true
+  - trigger: "'rbac"
+    replace: "role-based access control"
+    word: true
+    propagate_case: true
+  - trigger: "'repr"
+    replace: "representation"
+    word: true
+    propagate_case: true
+  - trigger: "'q"
+    replace: "question"
+    word: true
+    propagate_case: true
+  - trigger: "'qs"
+    replace: "questions"
+    word: true
+    propagate_case: true
+  - trigger: "'pov"
+    replace: "point of view"
+    word: true
+    propagate_case: true
+  - trigger: "'v"
+    replace: "everything"
+    word: true
+    propagate_case: true
+  - trigger: "'jic"
+    replace: "just in case"
+    word: true
+    propagate_case: true
+  - trigger: "'ne"
+    replace: "anything"
+    word: true
+    propagate_case: true
+  - trigger: "'abac"
+    replace: "attribute-based access control"
+    word: true
+    propagate_case: true
+  - trigger: "'repo"
+    replace: "repository"
+    word: true
+    propagate_case: true
+  - trigger: "'repos"
+    replace: "repositories"
+    word: true
+    propagate_case: true
+  - trigger: "vulns"
+    replace: "vulnerabilities"
+    word: true
+    propagate_case: true
+  - trigger: "'vulns"
+    replace: "vulnerabilities"
+    word: true
+    propagate_case: true
+  - trigger: "'vuln"
+    replace: "vulnerability"
+    word: true
+    propagate_case: true
+  - trigger: "'resp"
+    replace: "responsibility"
+    word: true
+    propagate_case: true
+  - trigger: "'resps"
+    replace: "responsibilities"
+    word: true
+    propagate_case: true
+  - trigger: "'algo"
+    replace: "algorithm"
+    word: true
+    propagate_case: true
+  - trigger: "'algos"
+    replace: "algorithms"
+    word: true
+    propagate_case: true
+  - trigger: "prioz"
+    replace: "prioritize"
+    word: true
+    propagate_case: true
+  - trigger: "priozing"
+    replace: "prioritizing"
+    word: true
+    propagate_case: true
+  - trigger: "priozn"
+    replace: "prioritization"
+    word: true
+    propagate_case: true
+  - trigger: "'idk"
+    replace: "I don't know"
+    word: true
+    propagate_case: true
+  - trigger: "'wai"
+    replace: "working as intended"
+    word: true
+    propagate_case: true
+  - trigger: "prereqs"
+    replace: "prerequisites"
+    word: true
+    propagate_case: true
+  - trigger: "prereq"
+    replace: "prerequisite"
+    word: true
+    propagate_case: true
+  - trigger: "'hcl"
+    replace: "HashiCorp configuration langauge"
+    word: true
+    propagate_case: true
+  - trigger: "'pref"
+    replace: "preference"
+    word: true
+    propagate_case: true
+  - trigger: "'prefs"
+    replace: "preferences"
+    word: true
+    propagate_case: true
+  - trigger: "prefs"
+    replace: "preferences"
+    word: true
+    propagate_case: true
+  - trigger: "'fio"
+    replace: "figure it out"
+    word: true
+    propagate_case: true
+  - trigger: "'tdd"
+    replace: "test-driven development"
+    word: true
+    propagate_case: true
+  - trigger: "'wip"
+    replace: "work in progress"
+    word: true
+    propagate_case: true

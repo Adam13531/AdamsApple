@@ -1,0 +1,36 @@
+global_vars:
+  - name: us_day_and_date
+    type: date
+    params:
+      # e.g. "Fri 06/30/2023"
+      format: "%a %m/%d/%Y"
+  - name: time_with_ampm
+    type: date
+    params:
+      # e.g. "10:56 AM"
+      format: "%I:%M %p"
+  - name: us_date_and_time
+    type: date
+    params:
+      # e.g. "Fri 06/30/2023 - 10:56 AM"
+      format: "{{us_day_and_date}} - {{time_with_ampm}}"
+
+matches:
+  - trigger: "'n"
+    replace: "{{time_with_ampm}} -"
+    word: true
+  - trigger: "'ddate"
+    replace: "{{us_day_and_date}}"
+    word: true
+  - trigger: "'nn"
+    replace: "{{us_date_and_time}} -"
+    word: true
+  - trigger: "'st"
+    replace: "{{us_date_and_time}} - meeting start"
+    word: true
+  - trigger: "'end"
+    replace: "{{us_date_and_time}} - meeting end"
+    word: true
+  - trigger: "'11"
+    replace: "{{time_with_ampm}} - 1:1 with [$|$]"
+    word: true

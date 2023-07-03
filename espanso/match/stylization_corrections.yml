@@ -1,0 +1,29 @@
+matches:
+  - trigger: "macbook"
+    replace: "MacBook"
+    word: true
+    propagate_case: true
+  - trigger: "Jetbrains"
+    replace: "JetBrains"
+    word: true
+    propagate_case: true
+  - trigger: "ShotCut"
+    replace: "Shotcut"
+    word: true
+    propagate_case: true
+  - trigger: "XCode"
+    replace: "Xcode"
+    word: true
+    propagate_case: true
+  - trigger: "Gitlab"
+    replace: "GitLab"
+    word: true
+    propagate_case: true
+  - trigger: "Intellij"
+    replace: "IntelliJ"
+    word: true
+    propagate_case: true
+  - trigger: "T-mobile"
+    replace: "T-Mobile"
+    word: true
+    propagate_case: true
