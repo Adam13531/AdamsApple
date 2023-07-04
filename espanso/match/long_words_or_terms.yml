@@ -215,10 +215,6 @@ matches:
     replace: "StackOverflow"
     word: true
     propagate_case: true
-  - trigger: "'notes"
-    replace: "https://notes.adamlearns.com/"
-    word: true
-    propagate_case: true
   - trigger: "'i"
     replace: "infrastructure"
     word: true

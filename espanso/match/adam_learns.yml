@@ -1,0 +1,69 @@
+matches:
+  - trigger: "'notes"
+    replace: "https://notes.adamlearns.com/"
+    word: true
+    propagate_case: true
+  - trigger: "'al"
+    replace: "Adam Learns"
+    word: true
+    propagate_case: true
+  - trigger: "'all"
+    replace: "https://adamlearns.live"
+    word: true
+    propagate_case: true
+  - trigger: "'alc"
+    replace: "https://adamlearns.com"
+    word: true
+    propagate_case: true
+  - trigger: "'courses"
+    replace: "https://adamlearns.com/courses"
+    word: true
+    propagate_case: true
+  - trigger: "'al"
+    replace: "Adam Learns"
+    word: true
+    propagate_case: true
+  - trigger: "'blog"
+    replace: "https://adamlearns.com/blog"
+    word: true
+    propagate_case: true
+  - trigger: "'faq"
+    replace: "https://adamlearns.com/faq"
+    word: true
+    propagate_case: true
+  - trigger: "'discord"
+    replace: "https://discord.gg/AdamLearns"
+    word: true
+    propagate_case: true
+  - trigger: "'twitter"
+    replace: "https://twitter.com/AdamLearnsLive"
+    word: true
+    propagate_case: true
+  - trigger: "'twitch"
+    replace: "https://twitch.tv/AdamLearnsLive"
+    word: true
+    propagate_case: true
+  - trigger: "'youtube"
+    replace: "https://youtube.com/c/AdamLearns"
+    word: true
+    propagate_case: true
+  - trigger: "'email"
+    replace: "adam@adamlearns.live"
+    word: true
+    propagate_case: true
+  - triggers: ["'insta", "'instagram"]
+    replace: "https://instagram.com/adamlearnslive"
+    word: true
+    propagate_case: true
+  - trigger: "'facebook"
+    replace: "https://facebook.com/AdamLearns"
+    word: true
+    propagate_case: true
+  - trigger: "'gitlab"
+    replace: "https://gitlab.com/AdamLearnsSupporters"
+    word: true
+    propagate_case: true
+  - trigger: "'donate"
+    replace: "https://streamlabs.com/tip/Adam13531"
+    word: true
+    propagate_case: true

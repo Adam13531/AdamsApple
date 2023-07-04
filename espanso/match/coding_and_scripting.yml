@@ -35,3 +35,6 @@ matches:
   - trigger: "'aliask"
     replace: "alias k=kubectl"
     word: true
+  - trigger: "'l3"
+    replace: "localhost:3000"
+    word: true

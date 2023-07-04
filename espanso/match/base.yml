@@ -1,0 +1,4 @@
+# This file gets created no matter what due to
+# https://github.com/espanso/espanso/issues/1384, so I just make sure
+# it's always empty.
+matches:

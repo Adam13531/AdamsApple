@@ -15,6 +15,18 @@ matches:
     replace: "♭"
     word: true
     propagate_case: true
+  - trigger: "'natural"
+    replace: "♮"
+    word: true
+    propagate_case: true
+  - trigger: "'halfdim"
+    replace: "ø"
+    word: true
+    propagate_case: true
+  - trigger: "'halfdim7"
+    replace: "ø⁷"
+    word: true
+    propagate_case: true
   - trigger: "'omega"
     replace: "Ω"
     word: true
@@ -107,6 +119,14 @@ matches:
     replace: "³"
     word: true
     propagate_case: true
+  - trigger: "'7" # mostly for music, e.g. B⁷
+    replace: "⁷"
+    word: true
+    propagate_case: true
+  - trigger: "'9" # mostly for music, e.g. B⁹
+    replace: "⁹"
+    word: true
+    propagate_case: true
   - trigger: "'bb"
     replace: "•"
     word: true
@@ -131,7 +151,7 @@ matches:
     replace: "…"
     word: true
     propagate_case: true
-  - trigger: "'deg"
+  - triggers: ["'deg", "'dim"] # "dim" is for diminished chords in music
     replace: "°"
     word: true
     propagate_case: true

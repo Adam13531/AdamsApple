@@ -7,13 +7,16 @@ matches:
   - trigger: "'ambiguity"
     replace: "[1] enumerate questions [2] answer them [3] process answers [4] repeat"
     word: true
+  - trigger: "'botcoin"
+    replace: "฿"
+    word: true
 
   # Opens Espanso folder in my GUI editor ("s")
   #
   # Just copying this path here since I'll probably forget that I made
   # this and then search through my shortcuts to figure out if it's
   # there: "/Users/adam/Library/Application Support/espanso"
-  - trigger: "'edit"
+  - triggers: ["'edit", "'edis"] # ("edis" is just a common typo for me)
     replace: "{{output}}"
     vars:
       - name: output

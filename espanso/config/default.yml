@@ -43,3 +43,6 @@ toggle_key: OFF
 undo_backspace: false
 
 word_separators: [" ", ")", "\r"]
+
+# Stop showing the icon (e.g. in the menu bar on macOS)
+show_icon: false

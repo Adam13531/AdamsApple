@@ -31,3 +31,7 @@ matches:
     replace: "über"
     word: true
     propagate_case: true
+  - trigger: "'turkey"
+    replace: "Türkiye"
+    word: true
+    propagate_case: true
