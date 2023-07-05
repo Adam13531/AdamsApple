@@ -7,6 +7,10 @@ I should eventually replace everything with https://github.com/anishathalye/dotb
 
 ## Specific notes
 
+### iTerm2
+
+Don't symlink the `plist` file or you run into [this bug](https://gitlab.com/gnachman/iterm2/-/issues/10962). Instead, simply go to iTerm2 → Preferences → General → Preferences → Load preferences from a custom folder or URL and supply `preferences/iTerm2/com.googlecode.iterm2.plist`.
+
 ### VSCode
 
 Settings are synced through my personal Microsoft account, so I didn't add them here.

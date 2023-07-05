@@ -38,5 +38,4 @@ updateSymlink ${0:a:h}/shell/zsh/plugins_after.zsh ~/.zsh/plugins_after.zsh
 
 updateSymlink ${0:a:h}/espanso "/Users/adam/Library/Application Support/espanso"
 
-updateSymlink ${0:a:h}/preferences/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 updateSymlink ${0:a:h}/preferences/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
