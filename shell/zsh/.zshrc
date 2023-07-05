@@ -1,9 +1,9 @@
+extSsdLocation=/Volumes/inland
+codeDir=$extSsdLocation/code
 adamsAppleDir=$codeDir/AdamsApple
 colorizeLocation=$adamsAppleDir/shell/colorize/colorize.py
 ccdLocation=$adamsAppleDir/shell/ccd/ccd.py
 relocateHomepagerizerLocation=$adamsAppleDir/shell/relocate_homepagerizer_homepage/main.py
-extSsdLocation=/Volumes/inland
-codeDir=$extSsdLocation/code
 
 # Use colors for 'ls'
 export CLICOLOR=1
@@ -615,6 +615,16 @@ function weather() {
     # "u" forces Fahrenheit.
     # "F" removes the "follow on Twitter" thing at the end
     curl "wttr.in/seattle?u&F"
+}
+
+# Open my accounting log for Xtonomous. This probably shouldn't be in a
+# shell file that I make public, but the file itself is locked down, and
+# even if people saw the contents, they'd just know how much money I
+# lost developing Bot Land. 😢
+function openLedger() {
+    if read -q "choice?Open ledger (y/n)? "; then
+        open "https://onedrive.live.com/edit.aspx?resid=8D59514B5DBE9460!154505&cid=8d59514b5dbe9460&CT=1688432160500&OR=ItemsView"
+    fi
 }
 
 # Tue 06/06/2023 - macOS "find" but excludes directories.

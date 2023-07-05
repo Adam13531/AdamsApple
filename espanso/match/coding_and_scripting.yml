@@ -38,3 +38,9 @@ matches:
   - trigger: "'l3"
     replace: "localhost:3000"
     word: true
+  - trigger: "'mref"
+    replace: "([reference]({{clipboard}}))"
+    word: true
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
