@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 extSsdLocation=/Volumes/inland
 codeDir=$extSsdLocation/code
 adamsAppleDir=$codeDir/AdamsApple
@@ -56,8 +63,6 @@ function setPromptColor() {
     # Prompt with a regular text color:
     PS1="🍎 %{%F{69}%}%2~%{$reset_color%}%{$fg[cyan]%}>%{$reset_color%}"
 }
-
-setPromptColor
 
 # Typos
 alias Cd='cd'
@@ -638,6 +643,9 @@ function findf() {
     find $searchPath -type f
 }
 
+# Prezto
+source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+
 source ~/.zsh/plugins_after.zsh
 
 # Tue 10/12/2021 - 07:46 AM
@@ -645,3 +653,6 @@ source ~/.zsh/plugins_after.zsh
 # At the very least, this gives ⌘⇧↑ and ⌘⇧↓ for navigating between the
 # last commands you've typed.
 source ~/.iterm2_shell_integration.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
