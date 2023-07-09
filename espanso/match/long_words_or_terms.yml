@@ -208,7 +208,7 @@ matches:
     word: true
     propagate_case: true
   - trigger: "'te"
-    replace: "TextExpander"
+    replace: "text expansion"
     word: true
     propagate_case: true
   - trigger: "'so"

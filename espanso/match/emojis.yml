@@ -107,6 +107,10 @@ matches:
     replace: "🎉"
     word: true
     propagate_case: false
+  - trigger: "'party"
+    replace: "🥳"
+    word: true
+    propagate_case: false
   - triggers: ["'neutral", "':|"]
     replace: "😐"
     word: true

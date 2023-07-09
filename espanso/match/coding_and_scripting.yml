@@ -9,7 +9,7 @@ matches:
     replace: "document.querySelector('link[rel*=\"icon\"]').href = \"//via.placeholder.com/32/F00\";"
     word: true
   - trigger: "'gpom"
-    replace: "git pull origin master --rebase"
+    replace: "git pull origin main --rebase"
     word: true
   - trigger: "'gitgrep"
     replace: "git rev-list --all | xargs git grep"
