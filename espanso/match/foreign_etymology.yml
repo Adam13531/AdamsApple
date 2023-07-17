@@ -3,6 +3,10 @@ matches:
     replace: "résumé"
     word: true
     propagate_case: true
+  - trigger: "'resumes"
+    replace: "résumés"
+    word: true
+    propagate_case: true
   - trigger: "pokemon"
     replace: "pokémon"
     word: true

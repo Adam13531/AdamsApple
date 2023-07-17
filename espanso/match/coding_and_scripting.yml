@@ -2,7 +2,7 @@ matches:
   - trigger: "'ytspeed"
     replace: "document.getElementsByTagName(\"video\")[0].playbackRate = 2.5"
     word: true
-  - trigger: "'binsh"
+  - triggers: ["'binsh", "'#!"]
     replace: "#!/bin/sh"
     word: true
   - trigger: "'favicon"

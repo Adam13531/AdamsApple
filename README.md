@@ -13,13 +13,32 @@ Don't symlink the `plist` file or you run into [this bug](https://gitlab.com/gna
 
 Set up ⌥⇧⌘W to close tabs to the right ([reference](https://iterm2.com/python-api/examples/close_to_the_right.html)).
 
+### Git
+
+- Install [Delta](https://github.com/dandavison/delta).
+- `git config --global core.editor "'/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' -w"`
+- `git config --global help.autocorrect 30`
+
 ### VSCode
 
 Settings are synced through my personal Microsoft account, so I didn't add them here.
 
+### Karabiner-Elements
+
+I only use this so that my keyboard modifiers affect my mouse ([reference](https://superuser.com/a/1031484)). However, by having Karabiner-Elements enabled on my keyboard at all, I hit [this issue](https://github.com/pqrs-org/Karabiner-Elements/issues/3545).
+
 ### Raycast
 
-I only use this for its ability to globally hotkey applications. I think you have to manually import the `preferences/[...]rayconfig` file through Raycast itself (Settings → Advanced → Import / Export).
+I only use this for its ability to globally hotkey applications (and to disable ⌘H). I think you have to manually import the `preferences/[...]rayconfig` file through Raycast itself (Settings → Advanced → Import).
+
+Exporting:
+
+- Export all settings
+- Password-protect it (because it forces me to) with what's in my password manager
+
+### Rectangle
+
+Preferences... → go to the third tab → Import → Choose `RectangleConfig.json` from this repo.
 
 ### Homepage symlink
 
@@ -81,13 +100,37 @@ docs.google.com##.docs-ui-unprintable.apps-search-menu
   - Application: Microsoft OneNote
   - Menu Title: Search All Notebooks
   - Keyboard Shortcut: ⌘E
+  - Application: Raycast
+  - Menu Title: Hide Raycast
+  - Keyboard Shortcut: ⌥⌘F4 (it was arbitrarily chosen as a shortcut that I would never press while Raycast is open; the sole purpose of this is so that I can rebind ⌘H in Raycast to open the clock rather than hide the current application)
 - System Settings → Keyboard → Keyboard Shortcuts... → Services
   - Turn off practically all of these.
 
 #### OS settings that can be done through a terminal
 
-```
+```sh
+###############################################################################
+# macOS itself
+###############################################################################
 # Allow key repeat when holding a key like "e" rather than showing a
 # diacritic-chooser dialog
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+###############################################################################
+# AltTab configuration
+###############################################################################
+# https://alt-tab-macos.netlify.app/
+# Preview the selected window
+defaults write com.lwouis.alt-tab-macos previewFocusedWindow true
+# ⌘Tab
+defaults write com.lwouis.alt-tab-macos holdShortcut "\\U2318"
+# ⌥` should just be disabled since I don't like having a dialog show up
+# for that.
+defaults write com.lwouis.alt-tab-macos holdShortcut2 nextWindowShortcut2 ""
+# Show tabs as icons+names, not windows. This is to hopefully prevent
+# leaks while streaming.
+defaults write com.lwouis.alt-tab-macos hideThumbnails false
+# I don't really use spaces, so the numbers that show are extaneous
+# information.
+defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels true
 ```
