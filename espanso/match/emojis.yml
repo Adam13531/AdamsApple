@@ -11,7 +11,7 @@ matches:
     replace: "❤️"
     word: true
     propagate_case: false
-  - triggers: ["'monkas", "flush"]
+  - triggers: ["'monkas", "'flush"]
     replace: "😳"
     word: true
     propagate_case: false
@@ -31,7 +31,7 @@ matches:
     replace: "🥲"
     word: true
     propagate_case: false
-  - triggers: ["'lol", "xd"]
+  - triggers: ["'lol", "'xd"]
     replace: "😂"
     word: true
     propagate_case: false
@@ -71,7 +71,7 @@ matches:
     replace: "▶️"
     word: true
     propagate_case: false
-  - trigger: "'facepalm"
+  - triggers: ["'facepalm", "'palm", "'fpalm", "'fp"]
     replace: "🤦‍♂️"
     word: true
     propagate_case: false
@@ -197,10 +197,6 @@ matches:
     propagate_case: false
   - trigger: "':("
     replace: "🙁"
-    word: true
-    propagate_case: false
-  - trigger: "'!"
-    replace: "⚠️"
     word: true
     propagate_case: false
   - trigger: "'zap"

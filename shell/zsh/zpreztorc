@@ -52,6 +52,9 @@ zstyle ':prezto:load' pmodule \
 # arrow or end on your keyboard will choose it. ⌥→ will just choose
 # the next token, e.g. "ccd A B C D" will let me partially complete
 # with "ccd A B" by using ⌥→.
+#
+# To remove sensitive entries/passwords from autosuggestions, just edit
+# ~/.zsh_history, then make a new shell.
 
 # Set the query found color.
 # zstyle ':prezto:module:autosuggestions:color' found 'fg=magenta'
