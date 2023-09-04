@@ -38,6 +38,6 @@ updateSymlink ${0:a:h}/shell/zsh/plugins_after.zsh ~/.zsh/plugins_after.zsh
 updateSymlink ${0:a:h}/shell/zsh/.p10k.zsh ~/.p10k.zsh
 updateSymlink ${0:a:h}/shell/zsh/zpreztorc ~/.zprezto/runcoms/zpreztorc
 
-updateSymlink ${0:a:h}/espanso "~/Library/Application Support/espanso"
+updateSymlink ${0:a:h}/espanso ~/Library/Application\ Support/espanso
 
 updateSymlink ${0:a:h}/preferences/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict

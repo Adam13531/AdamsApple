@@ -54,7 +54,7 @@ matches:
   - triggers: ["':D", "'smile", "'pog"]
     replace: "😁"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'skull"
     replace: "💀"
     word: true

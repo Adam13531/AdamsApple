@@ -5,6 +5,9 @@ matches:
   - triggers: ["'binsh", "'#!"]
     replace: "#!/bin/sh"
     word: true
+  - trigger: "'binpy"
+    replace: "#!/usr/bin/env python3"
+    word: true
   - trigger: "'favicon"
     replace: "document.querySelector('link[rel*=\"icon\"]').href = \"//via.placeholder.com/32/F00\";"
     word: true
