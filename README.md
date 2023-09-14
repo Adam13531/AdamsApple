@@ -12,7 +12,9 @@ Then, I have a bunch of notes below because I didn't automate everything all at 
 
 ### iTerm2
 
-Don't symlink the `plist` file or you run into [this bug](https://gitlab.com/gnachman/iterm2/-/issues/10962). Instead, simply go to iTerm2 → Preferences → General → Preferences → Load preferences from a custom folder or URL and supply `preferences/iTerm2/com.googlecode.iterm2.plist`.
+Don't symlink the `plist` file or you run into [this bug](https://gitlab.com/gnachman/iterm2/-/issues/10962). Instead, simply go to iTerm2 → Preferences → General → Preferences → Load preferences from a custom folder or URL and supply `preferences/iTerm2/com.googlecode.iterm2.plist`. Alternatively, use this command:
+
+`defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/some/path/here/to/the/plist"`
 
 Set up ⌥⇧⌘W to close tabs to the right ([reference](https://iterm2.com/python-api/examples/close_to_the_right.html)).
 
@@ -83,6 +85,23 @@ Then, I installed to my external drive with `qmk setup Adam13531/qmk_firmware -H
 
 For whatever reason, that didn't actually clone my repo, so I just did `git remote set-url origin https://github.com/Adam13531/qmk_firmware` and then `git pull --rebase`. At that point, I could flash my keyboard with the instructions in [my README](https://github.com/Adam13531/qmk_firmware).
 
+### Brew
+
+Not gonna bother automating this until I need to reinstall. Here's a list of Brew formulae/casks that I have, last updated 09/13/2023.
+
+```
+╰─❯ brew list
+==> Formulae
+bat			gh			lz4			mecab-ipadic		pcre			xz
+ca-certificates		git-delta		mariadb			msgpack			pcre2			zsh-syntax-highlighting
+fzf			groonga			mecab			openssl@3		ripgrep			zstd
+
+==> Casks
+qlmarkdown		syntax-highlight
+```
+
+(note: I don't know how something like "groonga" is there; I don't think I installed that myself 🤔)
+
 ### Chrome
 
 #### uBlock Origin
@@ -108,32 +127,3 @@ docs.google.com##.docs-ui-unprintable.apps-search-menu
   - Keyboard Shortcut: ⌥⌘F4 (it was arbitrarily chosen as a shortcut that I would never press while Raycast is open; the sole purpose of this is so that I can rebind ⌘H in Raycast to open the clock rather than hide the current application)
 - System Settings → Keyboard → Keyboard Shortcuts... → Services
   - Turn off practically all of these.
-
-#### OS settings that can be done through a terminal
-
-```sh
-###############################################################################
-# macOS itself
-###############################################################################
-# Allow key repeat when holding a key like "e" rather than showing a
-# diacritic-chooser dialog
-defaults write -g ApplePressAndHoldEnabled -bool false
-
-###############################################################################
-# AltTab configuration
-###############################################################################
-# https://alt-tab-macos.netlify.app/
-# Preview the selected window
-defaults write com.lwouis.alt-tab-macos previewFocusedWindow true
-# ⌘Tab
-defaults write com.lwouis.alt-tab-macos holdShortcut "\\U2318"
-# ⌥` should just be disabled since I don't like having a dialog show up
-# for that.
-defaults write com.lwouis.alt-tab-macos holdShortcut2 nextWindowShortcut2 ""
-# Show tabs as icons+names, not windows. This is to hopefully prevent
-# leaks while streaming.
-defaults write com.lwouis.alt-tab-macos hideThumbnails false
-# I don't really use spaces, so the numbers that show are extaneous
-# information.
-defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels true
-```

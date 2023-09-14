@@ -19,3 +19,9 @@
       path: espanso
     ~/Library/KeyBindings/DefaultKeyBinding.dict:
       path: preferences/DefaultKeyBinding.dict
+
+- shell:
+    - command: zsh shell/install/settings.sh
+      description: Configuring OS- and app-specific settings.
+      stdout: true
+      stderr: true
