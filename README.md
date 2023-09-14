@@ -1,9 +1,12 @@
 # AdamsApple
+
 Scripts, configuration, and other setup information for my Mac.
 
 ## How to use
 
-I should eventually replace everything with https://github.com/anishathalye/dotbot, but I don't want to "perfect" to be the enemy of "good", so I just wrote my own `install.sh` quickly. Running that copies some files to the right locations, but it doesn't install every program on its own.
+Just run `./install` (or `./install -v` for verbose output).
+
+Then, I have a bunch of notes below because I didn't automate everything all at once.
 
 ## Specific notes
 

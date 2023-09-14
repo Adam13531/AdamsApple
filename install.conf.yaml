@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      # Removes the old target if it's a symlink
+      relink: true
+
+- create:
+    ~/.zsh:
+
+- link:
+    ~/.zshrc:
+      path: shell/zsh/.zshrc
+    ~/.zsh/plugins_after.zsh:
+      path: shell/zsh/plugins_after.zsh
+    ~/.p10k.zsh:
+      path: shell/zsh/.p10k.zsh
+    ~/.zprezto/runcoms/zpreztorc:
+      path: shell/zsh/zpreztorc
+    ~/Library/Application Support/espanso:
+      path: espanso
+    ~/Library/KeyBindings/DefaultKeyBinding.dict:
+      path: preferences/DefaultKeyBinding.dict
