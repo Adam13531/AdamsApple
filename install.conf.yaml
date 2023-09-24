@@ -5,6 +5,7 @@
 
 - create:
     ~/.zsh:
+    ~/.hammerspoon:
 
 - link:
     ~/.zshrc:
@@ -19,6 +20,10 @@
       path: espanso
     ~/Library/KeyBindings/DefaultKeyBinding.dict:
       path: preferences/DefaultKeyBinding.dict
+    ~/.hammerspoon/init.lua:
+      path: hammerspoon/init.lua
+    ~/.hammerspoon/highlight_window.lua:
+      path: hammerspoon/highlight_window.lua
 
 - shell:
     - command: zsh shell/install/settings.sh
