@@ -88,6 +88,8 @@ alias lsg='ls | grep -i'
 
 # Misc. aliases
 alias diffLastCommit='lastCommitDiff'
+alias editzsh='editbash'
+alias sourcezsh='sourcebash'
 
 # Tue 11/24/2020 - 08:41 AM
 # Heck if I'm ever going to remember this.
