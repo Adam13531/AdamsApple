@@ -372,6 +372,7 @@ function ccd() {
     if [ $errcode -eq 0 ]; then
         colorize "→ ^g$output"
         cd $output
+        title
     else
         colorize "^rFailed: ^=$output"
     fi
