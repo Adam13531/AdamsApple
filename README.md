@@ -113,6 +113,10 @@ To block the `@` completions for Google Docs (so that I don't leak sensitive inf
 docs.google.com##.docs-ui-unprintable.apps-search-menu
 ```
 
+### Shortcuts
+
+See [the README in `shortcuts`](./shortcuts/README.md).
+
 ### OS settings
 
 - System Settings → Keyboard → Keyboard Shortcuts... → Services
