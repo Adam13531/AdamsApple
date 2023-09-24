@@ -115,15 +115,5 @@ docs.google.com##.docs-ui-unprintable.apps-search-menu
 
 ### OS settings
 
-- System Settings → Keyboard → Keyboard Shortcuts... → App Shortcuts → ➕
-  - Application: Google Chrome
-  - Menu Title: Close Tabs to the Right
-  - Keyboard Shortcut: ⌥⇧⌘W
-  - Application: Microsoft OneNote
-  - Menu Title: Search All Notebooks
-  - Keyboard Shortcut: ⌘E
-  - Application: Raycast
-  - Menu Title: Hide Raycast
-  - Keyboard Shortcut: ⌥⌘F4 (it was arbitrarily chosen as a shortcut that I would never press while Raycast is open; the sole purpose of this is so that I can rebind ⌘H in Raycast to open the clock rather than hide the current application)
 - System Settings → Keyboard → Keyboard Shortcuts... → Services
-  - Turn off practically all of these.
+  - Turn off practically all of these (they're things like "Make New Sticky Note" or "Convert Text to Simplified Chinese").
