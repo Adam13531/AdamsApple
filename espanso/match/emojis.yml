@@ -2,55 +2,55 @@ matches:
   - trigger: "'rage"
     replace: "😡"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'tu"
     replace: "👍"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'heart"
     replace: "❤️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'monkas", "'flush"]
     replace: "😳"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'ty", "'pray"]
     replace: "🙏"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'hey", "'hi", "'wave"]
     replace: "👋"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'sad"
     replace: "😢"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'tear"
     replace: "🥲"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'lol", "'xd"]
     replace: "😂"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'eyes"
     replace: "👀"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'fire"
     replace: "🔥"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'think"
     replace: "🤔"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'flower"
     replace: "(◕‿◕✿)"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["':D", "'smile", "'pog"]
     replace: "😁"
     word: true
@@ -58,359 +58,359 @@ matches:
   - trigger: "'skull"
     replace: "💀"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'skull2"
     replace: "☠️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'rocket"
     replace: "🚀"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'play"
     replace: "▶️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'facepalm", "'palm", "'fpalm", "'fp"]
     replace: "🤦‍♂️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'td"
     replace: "👎"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'warn", "'!"]
     replace: "⚠️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'check", "'/"]
     replace: "✅"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'x"
     replace: "❌"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'?"
     replace: "❓"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'worry", "'worried"]
     replace: "😨"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'shh"
     replace: "🤫"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'tada"
     replace: "🎉"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'party"
     replace: "🥳"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'neutral", "':|"]
     replace: "😐"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'muscle"
     replace: "💪"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'shrug"
     replace: "🤷‍♂️"
     word: true
-    propagate_case: false
-  - triggers: ["':p", "':P"]
+    propagate_case: true
+  - trigger: "':p"
     replace: "😛"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'cat"
     replace: "😺"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'drool"
     replace: "🤤"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'yum"
     replace: "😋"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'love"
     replace: "❤️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'key"
     replace: "🔑"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'mic"
     replace: "🎤"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "':/"
     replace: "😕"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "':O"
     replace: "😮"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'blue"
     replace: "🔵"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'cool"
     replace: "😎"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'bomb"
     replace: "💣"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'8)", "'sung"]
     replace: "😎"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'snail"
     replace: "🐌"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'burger", "'hamburger"]
     replace: "🍔"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'eye"
     replace: "👀"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'siren"
     replace: "🚨"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'cry"
     replace: "😭"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "':("
     replace: "🙁"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'zap"
     replace: "⚡️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'kap"
     replace: "🙃"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'dash"
     replace: "🏃‍♂️💨"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'clap"
     replace: "👏"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'tongue"
     replace: "😛"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'star"
     replace: "⭐️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'sparkle"
     replace: "✨"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'*"
     replace: "⭐️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'whew", "'whewp"]
     replace: "😅"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'whewn"
     replace: "😓"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'cheer"
     replace: "🎊😁🎉"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["';)", "'wink"]
     replace: "😉"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'cross", "'crossed"]
     replace: "🤞"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'plus", "'+"]
     replace: "➕"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'wrench"
     replace: "🔧"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'hammer"
     replace: "🔨"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'minus"
     replace: "➖"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'evil"
     replace: "😈"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'tableflip", "'flip"]
     replace: "(╯°□°)╯︵ ┻━┻"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'live"
     replace: "🔴"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'`?"
     replace: "❓"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'puke", "'vomit"]
     replace: "🤮"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'duck"
     replace: "🦆"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'clown"
     replace: "🤡"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'apple"
     replace: "🍎"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'yawn"
     replace: "🥱"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'robot"
     replace: "🤖"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'barf"
     replace: "🤮"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "':)"
     replace: "🙂"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'sweat"
     replace: "😰💦"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'red"
     replace: "🔴"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'elephant"
     replace: "🐘"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'groan"
     replace: "😩"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'rolleyes", "'roll"]
     replace: "🙄"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'cricket"
     replace: "🦗"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'crickets"
     replace: "🦗🦗🦗"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'cloudemoji"
     replace: "☁️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'stars"
     replace: "⭐️⭐️⭐️⭐️⭐️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'crown"
     replace: "👑"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'brain"
     replace: "🧠"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'trophy"
     replace: "🏆"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'clock"
     replace: "⏰"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'nuke"
     replace: "💥"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'bee"
     replace: "🐝"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'sun"
     replace: "🌞"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'fear"
     replace: "😱"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'money"
     replace: "💸"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'gear"
     replace: "⚙️"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'nerd"
     replace: "🤓"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'huff"
     replace: "😤"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'angel"
     replace: "😇"
     word: true
-    propagate_case: false
+    propagate_case: true
   - triggers: ["'mindblown", "'mindblow"]
     replace: "🤯"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'ok"
     replace: "👌"
     word: true
-    propagate_case: false
+    propagate_case: true
   - trigger: "'construction"
     replace: "⚠️ 🔧 UNDER CONSTRUCTION TODO (this is currently being edited) 🔧 ⚠️"
     word: true

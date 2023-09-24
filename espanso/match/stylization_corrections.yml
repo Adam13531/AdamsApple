@@ -26,4 +26,4 @@ matches:
   - trigger: "T-mobile"
     replace: "T-Mobile"
     word: true
-    propagate_case: true
+    propagate_case: false
