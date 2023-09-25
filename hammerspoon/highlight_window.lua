@@ -41,6 +41,8 @@ end)
 
 -- Relocates the canvas elements. This is safe to call repeatedly.
 function relocateCanvasElements()
+  if focusedWin == nil then return end
+
   -- Size the canvas so that it takes up the entirety of focused window.
   local frame = focusedWin:frame()
   canvas:frame(frame)
@@ -132,6 +134,8 @@ animTimer:stop()
 function winFocused(w)
   local newFocusedWindow=getFocusedWindow()
 
+  if newFocusedWindow == nil then return end
+
   -- Chrome considers the ⌘F window to be a different window (although
   -- annoyingly, it has the same "Find in page" title as the parent
   -- window, so we can't use an hs.window.filter to differentiate by
@@ -167,7 +171,7 @@ windowFilter = hs.window.filter.new(nil, "my-log")
 windowFilter:subscribe(subscriptions)
 
 -- Sometimes the window events don't trigger, so this is here just to
--- catch any issues where the canvas is in a stale location.  
+-- catch any issues where the canvas is in a stale location.
 fixStalenessTimer = hs.timer.doEvery(3, fixStaleness)
 fixStalenessTimer:start()
 
