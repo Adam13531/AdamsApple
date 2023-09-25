@@ -24,6 +24,8 @@
       path: hammerspoon/init.lua
     ~/.hammerspoon/highlight_window.lua:
       path: hammerspoon/highlight_window.lua
+    ~/.hammerspoon/window_navigation.lua:
+      path: hammerspoon/window_navigation.lua
 
 - shell:
     - command: zsh shell/install/settings.sh

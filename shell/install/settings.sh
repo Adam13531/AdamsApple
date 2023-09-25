@@ -39,22 +39,15 @@ defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool true
 # Keyboard shortcuts
 ########################################
 
+# Note to self: to bind something like ⌥⌘F4, see
+# https://stackoverflow.com/a/77154760/3595355. The string is "@~".
+
 # ⌥⌘⇧W (I also use this for "close tabs to the right" in other apps like
 # VSCode and iTerm 2)
 defaults write com.google.Chrome NSUserKeyEquivalents -dict-add "Close Tabs to the Right" -string '@~$w'
 
 # ⌘E so that it's like what it was on Windows
 defaults write com.microsoft.onenote.mac NSUserKeyEquivalents -dict-add "Search All Notebooks" -string '@e'
-
-# ⌥⌘F4 to hide Raycast. The shortcut is arbitrary; it was only intended
-# to be something that I would never accidentally press while Raycast
-# was open. The sole purpose of this is so that I can rebind ⌘H in
-# Raycast to open the Clock app so that it's less destructive than
-# hiding the current application.
-#
-# Note that the boxy character here represents F4. See
-# https://stackoverflow.com/a/77154760/3595355.
-defaults write com.raycast.macos NSUserKeyEquivalents -dict-add "Hide Raycast" -string "@~"
 
 ########################################
 # Dock

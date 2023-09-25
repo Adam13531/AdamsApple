@@ -32,15 +32,6 @@ Settings are synced through my personal Microsoft account, so I didn't add them 
 
 I only use this so that my keyboard modifiers affect my mouse ([reference](https://superuser.com/a/1031484)). However, by having Karabiner-Elements enabled on my keyboard at all, I hit [this issue](https://github.com/pqrs-org/Karabiner-Elements/issues/3545).
 
-### Raycast
-
-I only use this for its ability to globally hotkey applications (and to disable ⌘H). I think you have to manually import the `preferences/[...]rayconfig` file through Raycast itself (Settings → Advanced → Import).
-
-Exporting:
-
-- Export all settings
-- Password-protect it (because it forces me to) with what's in my password manager
-
 ### Rectangle
 
 Preferences... → go to the third tab → Import → Choose `RectangleConfig.json` from this repo.
