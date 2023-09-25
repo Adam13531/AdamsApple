@@ -1,3 +1,8 @@
+-- This script makes it more obvious which window in an application has
+-- the focus. A thin bar shows at the top of each application when it
+-- has the focus. Also, when you use the keyboard to switch
+-- applications, the title bar will flash.
+
 local lastClickTime=0
 local focusedWin=hs.window.focusedWindow()
 local titleBarLineHeight=5
@@ -143,7 +148,7 @@ function winFocused(w)
   -- window can trigger the windowFocused event if one tab has a "Find"
   -- window open. To work around this, we make sure that the new window
   -- has a different ID.
-  if focusedWin:id() == newFocusedWindow:id() then return end
+  if focusedWin ~= nil and focusedWin:id() == newFocusedWindow:id() then return end
   focusedWin=newFocusedWindow
 
   flashTitleBar()
@@ -157,10 +162,6 @@ end
 -- From what I've seen, this happens exactly 5 seconds into running
 -- Hammerspoon, and it's fixed by just switching between applications
 -- once or twice.
---
--- Also, from what I can tell, there's ALWAYS a focused window even if
--- if you ⌘Q the focused application entirely, so I don't subscribe to
--- windowUnfocused or windowNotVisible.
 local subscriptions={
   [hs.window.filter.windowVisible]=winFocused,
   [hs.window.filter.windowFocused]=winFocused,
