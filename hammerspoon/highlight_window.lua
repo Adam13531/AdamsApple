@@ -168,7 +168,7 @@ local subscriptions={
   [hs.window.filter.windowMoved]=winMoved,
 }
 
-windowFilter = hs.window.filter.new(nil, "my-log")
+windowFilter = hs.window.filter.new(nil, "my-log"):setAppFilter("Alfred", { rejectTitles = ".*" })
 windowFilter:subscribe(subscriptions)
 
 -- Sometimes the window events don't trigger, so this is here just to
