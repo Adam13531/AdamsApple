@@ -21,24 +21,51 @@ global_vars:
       format: "{{us_day_and_date}} - {{time_with_ampm}}"
 
 matches:
+  # e.g. "10:56 AM -"
   - trigger: "'n"
     replace: "{{time_with_ampm}} -"
     word: true
+  # e.g. "06/30/2023"
   - trigger: "'date"
     replace: "{{us_date}}"
     word: true
+  # e.g. "Fri 06/30/2023"
   - trigger: "'ddate"
     replace: "{{us_day_and_date}}"
     word: true
+    # e.g. "Fri 06/30/2023 - 10:56 AM -"
   - trigger: "'nn"
     replace: "{{us_date_and_time}} -"
     word: true
+    # e.g. "Fri 06/30/2023 - 10:56 AM - meeting start"
   - trigger: "'st"
     replace: "{{us_date_and_time}} - meeting start"
     word: true
+    # e.g. "Fri 06/30/2023 - 10:56 AM - meeting end"
   - trigger: "'end"
     replace: "{{us_date_and_time}} - meeting end"
     word: true
+    # e.g. "10:56 AM - 1:1 with []"
   - trigger: "'11"
     replace: "{{time_with_ampm}} - 1:1 with [$|$]"
     word: true
+    # Tomorrow's date, e.g. "Sat 07/01/2023"
+  - trigger: "'tdate"
+    replace: "{{tomorrow}}"
+    word: true
+    vars:
+      - name: tomorrow
+        type: date
+        params:
+          format: "%a %m/%d/%Y"
+          offset: 86400
+    # Yesterday's date, e.g. "Thu 06/29/2023"
+  - trigger: "'ydate"
+    replace: "{{yesterday}}"
+    word: true
+    vars:
+      - name: yesterday
+        type: date
+        params:
+          format: "%a %m/%d/%Y"
+          offset: -86400
