@@ -63,6 +63,34 @@ hs.hotkey.bind({"cmd"}, "H", function()
   hs.alert.show("Hammerspoon blocked ⌘H 🔥")
 end)
 
+-- Note: you need to escape forward slashes for AppleScript, not Lua, so
+-- "example.com/foo" becomes "example.com\\/foo".
+--
+-- Taken from https://stackoverflow.com/a/76454818/3595355
+function goToChromeTabByUrl(url)
+  local script = ([[(function() {
+  var browser = Application('%s');
+  browser.activate();
+
+  for (win of browser.windows()) {
+  var tabIndex =
+    win.tabs().findIndex(tab => tab.url().match(/%s/));
+
+  if (tabIndex != -1) {
+    win.activeTabIndex = (tabIndex + 1);
+    win.index = 1;
+  }
+  }
+  })();
+  ]]):format("Google Chrome", url)
+  hs.osascript.javascript(script)
+end
+
+-- ⌥C - go to the tab in Chrome that has Twitch chat
+hs.hotkey.bind({"alt"}, "C", function()
+    goToChromeTabByUrl("twitch.tv\\/popout\\/adamlearnslive\\/")
+end)
+
 function winFocused(w)
   if w == nil then return end
 
