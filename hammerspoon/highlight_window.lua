@@ -1,9 +1,8 @@
 -- This script makes it more obvious which window in an application has
 -- the focus. A thin bar shows at the top of each application when it
--- has the focus. Also, when you use the keyboard to switch
--- applications, the title bar will flash.
+-- has the focus. Also, when you switch applications, the title bar will
+-- flash.
 
-local lastClickTime=0
 local focusedWin=hs.window.focusedWindow()
 local titleBarLineHeight=5
 local windowFilter
@@ -35,15 +34,6 @@ function getLine()
   return canvas[2]
 end
 
-detectMouseDown = hs.eventtap.new({
-  hs.eventtap.event.types.leftMouseDown
-}, function(e)
-  local button = e:getProperty(
-      hs.eventtap.event.properties['mouseEventButtonNumber']
-  )
-  if button == 0 then lastClickTime = os.clock() end
-end)
-
 -- Relocates the canvas elements. This is safe to call repeatedly.
 function relocateCanvasElements()
   if focusedWin == nil then return end
@@ -69,16 +59,6 @@ function relocateCanvasElements()
 end
 
 function flashTitleBar()
-  -- When the focus was changed due to clicking, don't redraw since it's
-  -- obvious what was just clicked.
-  elapsedTimeSinceLastClick = os.clock() - lastClickTime
-  if elapsedTimeSinceLastClick < 0.05 then
-    -- At least show the line in the right location
-    getTitleBar().fillColor.alpha = 0.0
-    relocateCanvasElements()
-    return
-  end
-
   local startAlpha
 
   -- When an application only has a single window open, then it doesn't
@@ -175,5 +155,3 @@ windowFilter:subscribe(subscriptions)
 -- catch any issues where the canvas is in a stale location.
 fixStalenessTimer = hs.timer.doEvery(3, fixStaleness)
 fixStalenessTimer:start()
-
-detectMouseDown:start()
