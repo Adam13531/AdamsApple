@@ -2,6 +2,7 @@
     link:
       # Removes the old target if it's a symlink
       relink: true
+      force: true
 
 - create:
     ~/.zsh:
