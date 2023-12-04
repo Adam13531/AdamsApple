@@ -7,6 +7,10 @@ matches:
     replace: "Adam Learns"
     word: true
     propagate_case: true
+  - trigger: "'today"
+    replace: "https://today.adamlearns.com"
+    word: true
+    propagate_case: true
   - trigger: "'all"
     replace: "https://adamlearns.live"
     word: true
