@@ -28,6 +28,13 @@ for _, mapping in ipairs(mappings) do
 end
 
 function activateApp(appName)
+  -- Temporary workaround for an issue I'm facing where just VSCode lags when I
+  -- try to activate it.
+  if appName == "Visual Studio Code" then
+    hs.application.launchOrFocus(appName)
+    return
+  end
+
   -- (this only finds RUNNING applications)
   local app = hs.application.find(appName)
 
