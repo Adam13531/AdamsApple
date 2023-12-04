@@ -27,3 +27,7 @@ matches:
     replace: "T-Mobile"
     word: true
     propagate_case: false
+  - trigger: "Kofi"
+    replace: "Ko-fi"
+    word: true
+    propagate_case: false

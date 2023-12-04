@@ -91,8 +91,6 @@ fzf			groonga			mecab			openssl@3		ripgrep			zstd
 qlmarkdown		syntax-highlight
 ```
 
-(note: I don't know how something like "groonga" is there; I don't think I installed that myself 🤔)
-
 ### Chrome
 
 #### uBlock Origin

@@ -153,5 +153,5 @@ windowFilter:subscribe(subscriptions)
 
 -- Sometimes the window events don't trigger, so this is here just to
 -- catch any issues where the canvas is in a stale location.
-fixStalenessTimer = hs.timer.doEvery(3, fixStaleness)
+fixStalenessTimer = hs.timer.doEvery(1, fixStaleness)
 fixStalenessTimer:start()
