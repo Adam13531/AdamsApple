@@ -10,7 +10,6 @@ matches:
   - trigger: "ShotCut"
     replace: "Shotcut"
     word: true
-    propagate_case: true
   - trigger: "XCode"
     replace: "Xcode"
     word: true

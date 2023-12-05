@@ -711,7 +711,7 @@ matches:
     replace: "algorithms"
     word: true
     propagate_case: true
-  - trigger: "prioz"
+  - triggers: ["prioz", "prioize"]
     replace: "prioritize"
     word: true
     propagate_case: true
