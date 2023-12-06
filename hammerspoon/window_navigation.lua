@@ -12,7 +12,8 @@ local mappings = {
   { {"alt"}, "5", "iTerm"},
   { {"alt"}, "6", "KeePassXC"},
   { {"alt"}, "D", "Discord"},
-  { {"alt"}, "V", "VLC"}
+  { {"alt"}, "V", "VLC"},
+  { {"alt"}, "O", "OBS"}
 }
 
 for _, mapping in ipairs(mappings) do
