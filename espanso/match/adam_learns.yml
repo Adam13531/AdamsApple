@@ -67,7 +67,3 @@ matches:
     replace: "https://gitlab.com/AdamLearnsSupporters"
     word: true
     propagate_case: true
-  - trigger: "'donate"
-    replace: "https://streamlabs.com/tip/Adam13531"
-    word: true
-    propagate_case: true
