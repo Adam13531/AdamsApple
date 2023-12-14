@@ -7,11 +7,16 @@ const files = fs.readdirSync(pathToVODs);
 
 const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
 const gigabyteThreshold = 2;
-const thirtyDaysAgo = new Date(Date.now() - 3 * oneDay);
+const dayThreshold = 30;
+const thirtyDaysAgo = new Date(Date.now() - dayThreshold * oneDay);
 
 const shouldDelete = process.argv.includes("--delete");
 let numMatchingFiles = 0;
 let totalSpaceToClear = 0;
+
+console.log(
+  `Searching for VODs that are older than ${dayThreshold} days and larger than ${gigabyteThreshold} GB...`
+);
 
 files.forEach((file) => {
   const filePath = path.join(pathToVODs, file);
