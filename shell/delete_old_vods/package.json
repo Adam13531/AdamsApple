@@ -1,0 +1,14 @@
+{
+  "name": "delete-old-vods",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  }
+}
