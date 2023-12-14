@@ -127,6 +127,14 @@ function updateHomepage() {
     python3 "$relocateHomepagerizerLocation"
 }
 
+# Thu 12/14/2023 - 10:32 AM
+# Command to delete old vods.
+function deleteOldVODs() {
+    pushd .
+    cd "$adamsAppleDir/shell/delete_old_vods" && pnpm start
+    popd
+}
+
 # Tue 07/15/2014 - 06:36 PM
 # Thin wrapper around Colorize.
 function colorize() {
