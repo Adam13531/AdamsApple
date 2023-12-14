@@ -175,6 +175,10 @@ matches:
     replace: "foreign key"
     word: true
     propagate_case: true
+  - trigger: "'db"
+    replace: "database"
+    word: true
+    propagate_case: true
   - trigger: "'pk"
     replace: "primary key"
     word: true

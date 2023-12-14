@@ -411,6 +411,10 @@ matches:
     replace: "👌"
     word: true
     propagate_case: true
+  - trigger: "'salute"
+    replace: "🫡"
+    word: true
+    propagate_case: true
   - trigger: "'construction"
     replace: "⚠️ 🔧 UNDER CONSTRUCTION TODO (this is currently being edited) 🔧 ⚠️"
     word: true
