@@ -682,3 +682,6 @@ esac
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# Add PostgreSQL stuff to my PATH
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
