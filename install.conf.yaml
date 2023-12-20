@@ -21,9 +21,8 @@
       path: espanso
     ~/Library/KeyBindings/DefaultKeyBinding.dict:
       path: preferences/DefaultKeyBinding.dict
-    ~/.hammerspoon/:
-      glob: true
-      path: hammerspoon/*.lua
+    ~/.hammerspoon:
+      path: hammerspoon
 
 - shell:
     - command: zsh shell/install/settings.sh
