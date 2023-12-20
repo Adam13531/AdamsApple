@@ -42,7 +42,7 @@ toggle_key: OFF
 # Don't allow undoing an expansion by immediately pressing backspace
 undo_backspace: false
 
-word_separators: [" ", ")", "\r"]
+word_separators: [" ", ")", "\r", "\t"]
 
 # Stop showing the icon (e.g. in the menu bar on macOS)
 show_icon: false

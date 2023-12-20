@@ -91,6 +91,10 @@ matches:
     replace: "❌"
     word: true
     propagate_case: true
+  - trigger: "'-"
+    replace: "➖"
+    word: true
+    propagate_case: true
   - trigger: "'?"
     replace: "❓"
     word: true

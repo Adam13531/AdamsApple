@@ -11,6 +11,14 @@ matches:
   - trigger: "'favicon"
     replace: "document.querySelector('link[rel*=\"icon\"]').href = \"//via.placeholder.com/32/F00\";"
     word: true
+  - trigger: "'etoday"
+    replace: "!editcom today {{day}} - Adam is"
+    word: true
+    vars:
+      - name: day
+        type: date
+        params:
+          format: "%A"
   - trigger: "'gpom"
     replace: "git pull origin main --rebase"
     word: true

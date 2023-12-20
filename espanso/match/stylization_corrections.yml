@@ -2,26 +2,26 @@ matches:
   - trigger: "macbook"
     replace: "MacBook"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "Jetbrains"
     replace: "JetBrains"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "ShotCut"
     replace: "Shotcut"
     word: true
   - trigger: "XCode"
     replace: "Xcode"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "Gitlab"
     replace: "GitLab"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "Intellij"
     replace: "IntelliJ"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "T-mobile"
     replace: "T-Mobile"
     word: true
