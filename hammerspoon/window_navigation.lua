@@ -4,11 +4,12 @@
 
 local lastFocusedWindowByApp = {}
 
+-- To determine the bundle IDs, run "codesign -dr - /Applications/FOO.app"
 local mappings = {
   { {"alt"}, "1", "Google Chrome"},
   { {"alt"}, "2", "Finder"},
   { {"alt"}, "3", "Visual Studio Code"},
-  { {"alt"}, "4", "Microsoft OneNote"},
+  { {"alt"}, "4", "md.obsidian"},
   { {"alt"}, "5", "iTerm"},
   { {"alt"}, "6", "KeePassXC"},
   { {"alt"}, "D", "Discord"},
