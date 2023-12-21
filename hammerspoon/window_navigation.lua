@@ -38,7 +38,9 @@ function activateApp(appName)
   end
 
   -- (this only finds RUNNING applications)
-  local app = hs.application.find(appName)
+  -- the second param is to only search for exact matches: https://www.hammerspoon.org/docs/hs.application.html#find
+  -- this prevents launching Obsidian instead of OBS
+  local app = hs.application.find(appName, true)
 
   -- If the app isn't running, launch it.
   if app == nil then
