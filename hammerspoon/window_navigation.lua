@@ -4,45 +4,41 @@
 
 local lastFocusedWindowByApp = {}
 
--- To determine the bundle IDs, run "codesign -dr - /Applications/FOO.app"
+-- To determine the bundle IDs, run "codesign -dr - /Applications/FOO.app" or
+-- osascript -e 'id of app "Finder"'
 local mappings = {
-  { {"alt"}, "1", "Google Chrome"},
-  { {"alt"}, "2", "Finder"},
-  { {"alt"}, "3", "Visual Studio Code"},
+  { {"alt"}, "1", "com.google.Chrome"},
+  { {"alt"}, "2", "com.apple.finder"},
+  { {"alt"}, "3", "com.microsoft.VSCode"},
   { {"alt"}, "4", "md.obsidian"},
-  { {"alt"}, "5", "iTerm"},
-  { {"alt"}, "6", "KeePassXC"},
-  { {"alt"}, "D", "Discord"},
-  { {"alt"}, "V", "VLC"},
-  { {"alt"}, "O", "OBS"}
+  { {"alt"}, "5", "com.googlecode.iterm2"},
+  { {"alt"}, "6", "org.keepassxc.keepassxc"},
+  { {"alt"}, "D", "com.hnc.Discord"},
+  { {"alt"}, "V", "org.videolan.vlc"},
+  { {"alt"}, "O", "com.obsproject.obs-studio"}
 }
 
 for _, mapping in ipairs(mappings) do
   local mods=mapping[1]
   local key=mapping[2]
-  local appName=mapping[3]
+  local bundleId=mapping[3]
 
-  print(string.format("Mapping %s+%s → %s", hs.inspect(mods), key, appName))
+  print(string.format("Mapping %s+%s → %s", hs.inspect(mods), key, bundleId))
 
   hs.hotkey.bind(mods, key, function()
-    activateApp(appName)
+    activateApp(bundleId)
   end)
 end
 
-function activateApp(appName)
-  -- Temporary workaround for an issue I'm facing where just VSCode lags when I
-  -- try to activate it.
-  if appName == "Visual Studio Code" then
-    hs.application.launchOrFocus(appName)
-    return
-  end
-
+function activateApp(bundleId)
   -- (this only finds RUNNING applications)
-  local app = hs.application.find(appName)
+  -- The second param is to only search for exact matches:
+  -- https://www.hammerspoon.org/docs/hs.application.html#find
+  local app = hs.application.find(bundleId, true)
 
   -- If the app isn't running, launch it.
   if app == nil then
-    hs.application.launchOrFocus(appName)
+    hs.application.launchOrFocusByBundleID(bundleId)
     return
   end
 
@@ -50,7 +46,7 @@ function activateApp(appName)
   -- then focus the first window.
   lastFocusedWindow = lastFocusedWindowByApp[app:bundleID()]
   if lastFocusedWindow == nil then
-    hs.application.launchOrFocus(appName)
+    hs.application.launchOrFocusByBundleID(bundleId)
     return
   end
 
