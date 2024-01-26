@@ -147,6 +147,10 @@ matches:
     replace: "AutoHotkey"
     word: true
     propagate_case: true
+  - trigger: "'ob"
+    replace: "Obsidian"
+    word: true
+    propagate_case: true
   - trigger: "'sg"
     replace: "security group"
     word: true
@@ -641,6 +645,10 @@ matches:
     propagate_case: true
   - trigger: "'smes"
     replace: "subject-matter experts"
+    word: true
+    propagate_case: true
+  - trigger: "'ssr"
+    replace: "server-side rendering"
     word: true
     propagate_case: true
   - trigger: "'rbac"

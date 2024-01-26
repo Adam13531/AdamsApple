@@ -1,6 +1,6 @@
 matches:
   - trigger: "'ytspeed"
-    replace: "document.getElementsByTagName(\"video\")[0].playbackRate = 2.5"
+    replace: 'document.getElementsByTagName("video")[0].playbackRate = 2.5'
     word: true
   - triggers: ["'binsh", "'#!"]
     replace: "#!/bin/sh"
@@ -9,7 +9,7 @@ matches:
     replace: "#!/usr/bin/env python3"
     word: true
   - trigger: "'favicon"
-    replace: "document.querySelector('link[rel*=\"icon\"]').href = \"//via.placeholder.com/32/F00\";"
+    replace: 'document.querySelector(''link[rel*="icon"]'').href = "//via.placeholder.com/32/F00";'
     word: true
   - trigger: "'etoday"
     replace: "!editcom today {{day}} - Adam is"
@@ -21,6 +21,9 @@ matches:
           format: "%A"
   - trigger: "'gpom"
     replace: "git pull origin main --rebase"
+    word: true
+  - trigger: "'gsm"
+    replace: "git switch main && git pull"
     word: true
   - trigger: "'gitgrep"
     replace: "git rev-list --all | xargs git grep"
