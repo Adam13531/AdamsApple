@@ -11,6 +11,7 @@ adamsAppleDir=$codeDir/AdamsApple
 colorizeLocation=$adamsAppleDir/shell/colorize/colorize.py
 ccdLocation=$adamsAppleDir/shell/ccd/ccd.py
 relocateHomepagerizerLocation=$adamsAppleDir/shell/relocate_homepagerizer_homepage/main.py
+myTemp=~/tmp
 
 # Use colors for 'ls'
 export CLICOLOR=1
@@ -397,11 +398,11 @@ function home() {
     ccd "$@"
 }
 function temp() {
-    cd ~/tmp
+    cd "$myTemp"
     ccd "$@"
 }
 function tmp() {
-    cd ~/tmp
+    cd "$myTemp"
     ccd "$@"
 }
 function code() {
@@ -622,6 +623,21 @@ function openLedger() {
     if read -q "choice?Open ledger (y/n)? "; then
         open "https://onedrive.live.com/edit.aspx?resid=8D59514B5DBE9460!154505&cid=8d59514b5dbe9460&CT=1688432160500&OR=ItemsView"
     fi
+}
+
+# Thu 12/21/2023 - 02:47 PM - this is a temporary command until I have a proper
+# setup for Abbott and the database.
+function backUpDatabase() {
+    local dest="$myTemp/abbott_database_backups/`date`.sql"
+    pg_dump -d postgres://postgres:bar@localhost/foo > $dest
+    echo Saved to $dest
+}
+
+# Thu 01/25/2024 - 09:26 AM - backs up various files to OneDrive
+function backUpFiles() {
+    local oneDriveDir=~/Library/CloudStorage/OneDrive-Personal/Documents
+    rsync -a "$extSsdLocation/AdamLearns/assets" "$oneDriveDir/Adam Learns"
+    rsync -a "~/Library/Application Support/obs-studio/basic" "$oneDriveDir/program settings/OBS"
 }
 
 # Tue 06/06/2023 - macOS "find" but excludes directories.
