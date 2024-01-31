@@ -78,6 +78,7 @@ alias k='kubectl'
 alias rgi='rg -i'
 alias bat='bat --theme=OneHalfDark' # https://github.com/sharkdp/bat
 alias cat='bat --paging=never --style=plain' # use bat in non-interactive mode and with no line numbers
+alias brewfd='/opt/homebrew/bin/fd' # https://github.com/sharkdp/fd
 
 # Alias ps (thanks, HiDeoo!).
 alias psa='ps aux'
@@ -177,7 +178,7 @@ function ff() {
         return
     fi
 
-    ffCommon "$1" false
+    brewfd --case-sensitive "$1"
 }
 
 # Thu 02/17/2022 - 01:11 PM
@@ -189,7 +190,7 @@ function fftype() {
         return
     fi
 
-    ff "*.$1"
+    brewfd ".*\.$1"
 }
 
 # Thu 10/02/2014 - 07:20 PM
@@ -202,28 +203,7 @@ function ffi() {
         return
     fi
 
-    ffCommon "$1" true
-}
-
-# Thu 10/02/2014 - 07:38 PM
-# [private function] - do not call this directly
-# Used by ff and ffi.
-function ffCommon() {
-    local fileName=$1
-    local caseInsensitive=$2
-    local nameArg=-name
-
-    if [[ "$fileName" == "" ]]; then
-        colorize "^rYou should not call this function directly."
-        return
-    fi
-
-    if [[ $caseInsensitive == true ]]; then
-        nameArg=-iname
-    fi
-
-    colorize "Finding file(s): find . $nameArg \"^g$1^w\""
-    find . $nameArg "$fileName"
+    brewfd "$1"
 }
 
 # Thu 07/10/2014 - 06:06 PM
@@ -303,7 +283,8 @@ function fd() {
     fi
 
     colorize "Searching for the directory ^g$1 ^w(case-insensitive)"
-    find ./ -iname "$1" -type d
+
+    brewfd --type directory "$1"
 }
 
 # Mon 07/14/2014 - 05:19 PM
