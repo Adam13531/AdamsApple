@@ -85,8 +85,9 @@ alias brewfd='/opt/homebrew/bin/fd' # https://github.com/sharkdp/fd
 alias psa='ps aux'
 alias psg='ps aux | grep -i'
 
-# Alias ls
-alias lsg='ls | grep -i'
+# Alias ls (note that "ll" is a built-in alias to zsh)
+alias ls='lsd'
+alias lsg='lsd | grep -i'
 
 # Misc. aliases
 alias diffLastCommit='lastCommitDiff'
@@ -409,6 +410,10 @@ function code() {
     cd $extSsdLocation/code
     ccd "$@"
 }
+function notes() {
+    cd "$extSsdLocation/Documents/Obsidian Vaults"
+    ccd "$@"
+}
 function desktop() {
     cd ~/Desktop
     ccd "$@"
@@ -416,6 +421,10 @@ function desktop() {
 function ext() {
     cd $extSsdLocation
     ccd "$@"
+}
+
+function pronunciations() {
+    s "$extSsdLocation/Documents/Obsidian Vaults/private/Xtonomous/Stream-and-community/Name-pronunciations.md"
 }
 
 function parse_git_branch() {
@@ -650,6 +659,10 @@ function findf() {
 
     find $searchPath -type f
 }
+
+# Added as part of https://github.com/godotengine/godot-csharp-vscode/issues/43#issuecomment-1258321229
+# (so that I can debug Godot through VSCode)
+export GODOT4="/Applications/Godot_mono.app/Contents/MacOS/Godot"
 
 # Prezto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
