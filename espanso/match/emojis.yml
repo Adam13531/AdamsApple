@@ -303,6 +303,10 @@ matches:
     replace: "🍎"
     word: true
     propagate_case: true
+  - trigger: "'banana"
+    replace: "🍌"
+    word: true
+    propagate_case: true
   - trigger: "'yawn"
     replace: "🥱"
     word: true

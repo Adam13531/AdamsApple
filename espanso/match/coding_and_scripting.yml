@@ -8,6 +8,9 @@ matches:
   - trigger: "'binpy"
     replace: "#!/usr/bin/env python3"
     word: true
+  - trigger: "'ned"
+    replace: "NODE_ENV=development"
+    word: true
   - trigger: "'favicon"
     replace: 'document.querySelector(''link[rel*="icon"]'').href = "//via.placeholder.com/32/F00";'
     word: true
@@ -19,8 +22,19 @@ matches:
         type: date
         params:
           format: "%A"
+  - trigger: "'etenets"
+    replace: "!editcom today {{day}} - Adam is reviewing his tenets: https://docs.google.com/document/d/1jwhwMt6bxpuHGxNikRtsKTmkwyFVJsDqvgO3k_-1YLA/edit#heading=h.cpeolxcljhvr . This process takes place every week (watch this video for more information: https://www.youtube.com/watch?v=JNCbm94uIKI ) He'll update this command when the review is done."
+    word: true
+    vars:
+      - name: day
+        type: date
+        params:
+          format: "%A"
   - trigger: "'gpom"
     replace: "git pull origin main --rebase"
+    word: true
+  - trigger: "'diffstaged"
+    replace: "git diff --staged"
     word: true
   - trigger: "'gsm"
     replace: "git switch main && git pull"
