@@ -646,7 +646,11 @@ function backUpDatabase() {
 function backUpFiles() {
     local oneDriveDir=~/Library/CloudStorage/OneDrive-Personal/Documents
     rsync -a "$extSsdLocation/AdamLearns/assets" "$oneDriveDir/Adam Learns"
-    rsync -a "~/Library/Application Support/obs-studio/basic" "$oneDriveDir/program settings/OBS"
+    rsync -a ~/Library/Application\ Support/obs-studio/basic "$oneDriveDir/program settings/OBS"
+
+    echo "Manual back-ups for now:"
+    echo " - Commit and push notes"
+    echo " - Get database files from mini PC"
 }
 
 # Tue 06/06/2023 - macOS "find" but excludes directories.
