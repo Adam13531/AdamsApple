@@ -94,6 +94,12 @@ alias diffLastCommit='lastCommitDiff'
 alias editzsh='editbash'
 alias sourcezsh='sourcebash'
 
+# Aliases to allow unsigned code (taken from HiDeoo: https://github.com/HiDeoo/dotfiles/blob/b2d474e3a6905f4a7e8e84c82a643756b8c7a031/src/zsh/.zshrc#L189-L193)
+# Remove quarantine on a specific element.
+alias unquarantine='xattr -r -d com.apple.quarantine'
+# Approve a specific element from an unidentified developer via the system-wide assessment rule database.
+alias approve='spctl --add --label "Approved"'
+
 # Tue 11/24/2020 - 08:41 AM
 # Heck if I'm ever going to remember this.
 # @see http://data.agaric.com/get-git-diff-previous-commit
