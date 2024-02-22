@@ -430,7 +430,7 @@ function ext() {
 }
 
 function pronunciations() {
-    s "$extSsdLocation/Documents/Obsidian Vaults/private/Xtonomous/Stream-and-community/Name-pronunciations.md"
+    s "$extSsdLocation/Documents/Obsidian Vaults/private/Xtonomous/Stream and community/Name pronunciations.md"
 }
 
 function parse_git_branch() {
