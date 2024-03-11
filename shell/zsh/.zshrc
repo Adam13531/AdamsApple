@@ -90,7 +90,6 @@ alias psa='ps aux'
 alias psg='ps aux | grep -i'
 
 # Alias ls (note that "ll" is a built-in alias to zsh)
-alias ls='lsd'
 alias lsg='lsd | grep -i'
 alias tree='lsd --tree'
 
@@ -757,3 +756,11 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Add Python through pyenv to my PATH
 eval "$(pyenv init -)"
+
+# This is purposely at the end to override what zprezto does to make ls into
+# "lsd -G" or "lsd -F":
+# https://github.com/indrajitr/prezto/blob/f1c30ea51f75aa9d18237878385594d2ba323b47/modules/utility/init.zsh#L104C6-L113
+#
+# I couldn't figure out how to turn off any modifications of "ls" without
+# disabling the whole "utility" module (which may not actually be a bad idea).
+alias ls='lsd'
