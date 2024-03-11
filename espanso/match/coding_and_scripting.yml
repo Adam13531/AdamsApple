@@ -8,6 +8,12 @@ matches:
   - trigger: "'binpy"
     replace: "#!/usr/bin/env python3"
     word: true
+  - trigger: "//al" # This is for code reviews
+    replace: "// [adamlearns]"
+    word: true
+  - trigger: "#al" # This is for code reviews
+    replace: "# [adamlearns]"
+    word: true
   - trigger: "'ned"
     replace: "NODE_ENV=development"
     word: true

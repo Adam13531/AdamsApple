@@ -13,6 +13,10 @@ ccdLocation=$adamsAppleDir/shell/ccd/ccd.py
 relocateHomepagerizerLocation=$adamsAppleDir/shell/relocate_homepagerizer_homepage/main.py
 myTemp=~/tmp
 
+# Commands I never want to have in my history so that I don't have to manually
+# delete them or risk leaking them.
+export HISTORY_IGNORE='*cloudflared service install*'
+
 # Use colors for 'ls'
 export CLICOLOR=1
 
@@ -88,6 +92,7 @@ alias psg='ps aux | grep -i'
 # Alias ls (note that "ll" is a built-in alias to zsh)
 alias ls='lsd'
 alias lsg='lsd | grep -i'
+alias tree='lsd --tree'
 
 # Misc. aliases
 alias diffLastCommit='lastCommitDiff'
@@ -693,6 +698,27 @@ function findf() {
     find $searchPath -type f
 }
 
+function godotServer() {
+    local path=$1
+    if [[ "$path" == "" ]]; then
+        path=.
+    fi
+    "/Applications/Godot.app/Contents/MacOS/Godot" --path $path --headless
+}
+
+function changeOBSScene() {
+    local sceneName=$1
+    if [[ "$sceneName" == "" ]]; then
+        colorize "^rUsage: changeOBSScene <scene name>"
+        return
+    fi
+
+    pushd .
+    cd /Volumes/inland/code/OBSWebSocketClient
+    NODE_ENV=development pnpm start $sceneName
+    popd
+}
+
 # Added as part of https://github.com/godotengine/godot-csharp-vscode/issues/43#issuecomment-1258321229
 # (so that I can debug Godot through VSCode)
 export GODOT4="/Applications/Godot_mono.app/Contents/MacOS/Godot"
@@ -728,3 +754,6 @@ esac
 
 # Add PostgreSQL stuff to my PATH
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Add Python through pyenv to my PATH
+eval "$(pyenv init -)"
