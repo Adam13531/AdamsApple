@@ -67,3 +67,7 @@ matches:
     replace: "https://gitlab.com/AdamLearnsSupporters"
     word: true
     propagate_case: true
+  - trigger: "'ia"
+    replace: "Idle Ascendants"
+    word: true
+    propagate_case: true

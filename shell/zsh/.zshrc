@@ -142,9 +142,10 @@ function updateHomepage() {
 
 # Thu 12/14/2023 - 10:32 AM
 # Command to delete old vods.
+# This doesn't do anything without "--delete" being specified.
 function deleteOldVODs() {
     pushd .
-    cd "$adamsAppleDir/shell/delete_old_vods" && pnpm start
+    cd "$adamsAppleDir/shell/delete_old_vods" && pnpm start $1
     popd
 }
 
@@ -418,6 +419,10 @@ function tmp() {
 }
 function code() {
     cd $extSsdLocation/code
+    ccd "$@"
+}
+function ia() {
+    cd $extSsdLocation/code/Godot/IdleAscendants
     ccd "$@"
 }
 function notes() {
