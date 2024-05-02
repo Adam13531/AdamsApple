@@ -11,6 +11,10 @@ matches:
     replace: "Kubernetes"
     word: true
     propagate_case: true
+  - trigger: "'ecs"
+    replace: "entity-component system"
+    word: true
+    propagate_case: true
   - trigger: "'authn"
     replace: "authentication"
     word: true

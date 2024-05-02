@@ -425,6 +425,10 @@ function ia() {
     cd $extSsdLocation/code/Godot/IdleAscendants
     ccd "$@"
 }
+function ss() {
+    cd $extSsdLocation/code/Godot/Skeleseller
+    ccd "$@"
+}
 function notes() {
     cd "$extSsdLocation/Documents/Obsidian Vaults"
     ccd "$@"

@@ -47,7 +47,7 @@ matches:
     replace: "https://twitch.tv/AdamLearnsLive"
     word: true
     propagate_case: true
-  - trigger: "'youtube"
+  - triggers: ["'youtube", "'ytal", "'yta"]
     replace: "https://youtube.com/c/AdamLearns"
     word: true
     propagate_case: true
@@ -69,5 +69,13 @@ matches:
     propagate_case: true
   - trigger: "'ia"
     replace: "Idle Ascendants"
+    word: true
+    propagate_case: true
+  - trigger: "'jr"
+    replace: "Jump Royale"
+    word: true
+    propagate_case: true
+  - trigger: "'ss"
+    replace: "Skeleseller"
     word: true
     propagate_case: true
