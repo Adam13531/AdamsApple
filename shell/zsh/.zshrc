@@ -104,6 +104,9 @@ alias unquarantine='xattr -r -d com.apple.quarantine'
 # Approve a specific element from an unidentified developer via the system-wide assessment rule database.
 alias approve='spctl --add --label "Approved"'
 
+# For itch.io deploys
+ensureInPath "$HOME/bin/butler"
+
 # Tue 11/24/2020 - 08:41 AM
 # Heck if I'm ever going to remember this.
 # @see http://data.agaric.com/get-git-diff-previous-commit
@@ -442,10 +445,6 @@ function ext() {
     ccd "$@"
 }
 
-function pronunciations() {
-    s "$extSsdLocation/Documents/Obsidian Vaults/private/Xtonomous/Stream and community/Name pronunciations.md"
-}
-
 function parse_git_branch() {
   git branch --show-current 2>/dev/null|sed 's/^/ (/;s/$/)/'
 }
@@ -668,8 +667,8 @@ function backUpFiles() {
     rsync -a ~/Library/Application\ Support/obs-studio/basic "$oneDriveDir/program settings/OBS"
 
     echo "Manual back-ups for now:"
-    echo " - Commit and push notes"
-    echo " - Get database files from mini PC"
+    echo " - Commit and push notes (notes → git add . → git commit → git push, then follow the Starlight instructions for public pushes)"
+    echo " - Get database files from mini PC (scp adam@minipc:~/database_backups/abbott_backup_2024-03-16T16-23-15.544Z.sql ~/tmp/)"
 }
 
 # Thu 02/22/2024 - 10:06 AM - detect "git push", and when it fails, switch the

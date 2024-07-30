@@ -175,6 +175,14 @@ matches:
     replace: "💣"
     word: true
     propagate_case: true
+  - trigger: "'broom"
+    replace: "🧹"
+    word: true
+    propagate_case: true
+  - trigger: "'brick"
+    replace: "🧱"
+    word: true
+    propagate_case: true
   - triggers: ["'8)", "'sung"]
     replace: "😎"
     word: true
