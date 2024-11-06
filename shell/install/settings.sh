@@ -35,6 +35,10 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 # Disable bigger mouse pointer when shaking it.
 defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool true
 
+# Stop capturing shadows in screenshots since they expand the dimensions of the
+# capture.
+defaults write com.apple.screencapture disable-shadow -bool true
+
 ########################################
 # Keyboard shortcuts
 ########################################
