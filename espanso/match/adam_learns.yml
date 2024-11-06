@@ -51,6 +51,10 @@ matches:
     replace: "https://youtube.com/c/AdamLearns"
     word: true
     propagate_case: true
+  - trigger: "'mfaq"
+    replace: "Mentoring FAQ: https://docs.google.com/document/d/1k5qACojZ2RhxbH0Bi6GWKK7gnaO6rjieP91rnKDWgFE/edit"
+    word: true
+    propagate_case: true
   - trigger: "'email"
     replace: "adam@adamlearns.live"
     word: true
@@ -77,5 +81,17 @@ matches:
     propagate_case: true
   - trigger: "'ss"
     replace: "Skeleseller"
+    word: true
+    propagate_case: true
+  - trigger: "'bl"
+    replace: "Bot Land"
+    word: true
+    propagate_case: true
+  - trigger: "'sscom"
+    replace: "https://skeleseller.com"
+    word: true
+    propagate_case: true
+  - trigger: "'steam"
+    replace: "https://store.steampowered.com/app/3226210/Skeleseller"
     word: true
     propagate_case: true

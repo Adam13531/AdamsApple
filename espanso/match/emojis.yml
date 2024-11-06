@@ -15,6 +15,10 @@ matches:
     replace: "😳"
     word: true
     propagate_case: true
+  - triggers: ["'blush"]
+    replace: "😊"
+    word: true
+    propagate_case: true
   - triggers: ["'ty", "'pray"]
     replace: "🙏"
     word: true
@@ -367,8 +371,12 @@ matches:
     replace: "☁️"
     word: true
     propagate_case: true
-  - trigger: "'stars"
-    replace: "⭐️⭐️⭐️⭐️⭐️"
+  - trigger: "'lock"
+    replace: "🔒"
+    word: true
+    propagate_case: true
+  - triggers: ["'stars", "'stareyes"]
+    replace: "🤩"
     word: true
     propagate_case: true
   - trigger: "'crown"
