@@ -83,7 +83,7 @@ alias k='kubectl'
 alias rgi='rg -i'
 alias bat='bat --theme=OneHalfDark' # https://github.com/sharkdp/bat
 alias cat='bat --paging=never --style=plain' # use bat in non-interactive mode and with no line numbers
-alias brewfd='/opt/homebrew/bin/fd' # https://github.com/sharkdp/fd
+alias brewfd='/opt/homebrew/bin/fd' # https://github.com/sharkdp/fd - THIS IGNORES ANYTHING IN .gitignore
 
 # Alias ps (thanks, HiDeoo!).
 alias psa='ps aux'
@@ -200,6 +200,8 @@ function ff() {
 # Thu 02/17/2022 - 01:11 PM
 # Thin wrapper around `ff` to search for particular file types since zsh would
 # otherwise require quotation marks, which are annoying to type.
+#
+# Note that this ignores anything in .gitignore.
 function fftype() {
     if [[ "$1" == "" ]]; then
         colorize "^rUsage: fftype <file type to find>, e.g. fftype py"
