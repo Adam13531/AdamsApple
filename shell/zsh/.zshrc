@@ -670,7 +670,7 @@ function backUpFiles() {
 
     echo "Manual back-ups for now:"
     echo " - Commit and push notes (notes → git add . → git commit → git push, then follow the Starlight instructions for public pushes)"
-    echo " - Get database files from mini PC (scp adam@minipc:~/database_backups/abbott_backup_2024-03-16T16-23-15.544Z.sql ~/tmp/)"
+    echo " - Get Abbott database from mini PC (ssh into it → pg_dump -d postgres://postgres:bar@localhost/foo > ./backup.sql) (scp adam@minipc:~/database_backups/backup.sql \"$oneDriveDir/program settings/Abbott_Database\")"
 }
 
 # Thu 02/22/2024 - 10:06 AM - detect "git push", and when it fails, switch the
