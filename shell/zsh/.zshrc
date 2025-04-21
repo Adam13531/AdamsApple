@@ -112,7 +112,7 @@ ensureInPath "$HOME/bin/butler"
 # @see http://data.agaric.com/get-git-diff-previous-commit
 function lastCommitDiff() {
     colorize "^gDiffing last commit"
-    git diff HEAD^ HEAD
+    git diff "HEAD^" HEAD
 }
 
 # Tue 11/24/2020 - 08:43 AM
@@ -221,7 +221,7 @@ function ffi() {
         return
     fi
 
-    brewfd "$1"
+    brewfd --ignore-case "$1"
 }
 
 # Thu 07/10/2014 - 06:06 PM
@@ -774,3 +774,9 @@ eval "$(pyenv init -)"
 # I couldn't figure out how to turn off any modifications of "ls" without
 # disabling the whole "utility" module (which may not actually be a bad idea).
 alias ls='lsd'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/adam/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/adam/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/adam/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/adam/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
