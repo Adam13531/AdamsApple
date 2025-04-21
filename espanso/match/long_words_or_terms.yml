@@ -1,4 +1,12 @@
 matches:
+  - trigger: "'gdd"
+    replace: "game design document"
+    word: true
+    propagate_case: true
+  - trigger: "'gdds"
+    replace: "game design documents"
+    word: true
+    propagate_case: true
   - trigger: "'dd"
     replace: "design document"
     word: true
@@ -9,6 +17,10 @@ matches:
     propagate_case: true
   - trigger: "'k"
     replace: "Kubernetes"
+    word: true
+    propagate_case: true
+  - trigger: "'roi"
+    replace: "return on investment"
     word: true
     propagate_case: true
   - trigger: "'ecs"

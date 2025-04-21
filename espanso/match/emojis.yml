@@ -1,4 +1,8 @@
 matches:
+  - trigger: "'fish"
+    replace: "🐟"
+    word: true
+    propagate_case: true
   - trigger: "'rage"
     replace: "😡"
     word: true
@@ -299,7 +303,7 @@ matches:
     replace: "❓"
     word: true
     propagate_case: true
-  - triggers: ["'puke", "'vomit"]
+  - triggers: ["'puke", "'vomit", "'yuck"]
     replace: "🤮"
     word: true
     propagate_case: true
