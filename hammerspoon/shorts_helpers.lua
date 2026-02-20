@@ -6,8 +6,8 @@ hs.hotkey.bind({"cmd", "ctrl", "alt", "shift"}, "8", function()
   f.x = 0
   f.y = 0
   f.w = 1080
-  f.h = 1080
+  f.h = 2160
   win:setFrame(f)
 
-  hs.alert.show("Sized window to 1080x1080")
+  hs.alert.show(string.format("Sized window to %dx%d", f.w, f.h))
 end)

@@ -63,6 +63,10 @@ matches:
     replace: "😁"
     word: true
     propagate_case: true
+  - trigger: "'melt"
+    replace: "🫠"
+    word: true
+    propagate_case: true
   - trigger: "'skull"
     replace: "💀"
     word: true
@@ -443,8 +447,16 @@ matches:
     replace: "👌"
     word: true
     propagate_case: true
+  - trigger: "'egg"
+    replace: "🥚"
+    word: true
+    propagate_case: true
   - trigger: "'salute"
     replace: "🫡"
+    word: true
+    propagate_case: true
+  - trigger: "'music"
+    replace: "🎶🎵"
     word: true
     propagate_case: true
   - trigger: "'construction"

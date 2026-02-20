@@ -495,6 +495,10 @@ matches:
     replace: "everyone"
     word: true
     propagate_case: true
+  - triggers: ["'vw", "'ew"]
+    replace: "everywhere"
+    word: true
+    propagate_case: true
   - triggers: ["philo", "'philo"]
     replace: "philosophy"
     word: true
@@ -689,6 +693,10 @@ matches:
     propagate_case: true
   - trigger: "'v"
     replace: "everything"
+    word: true
+    propagate_case: true
+  - trigger: "'oa"
+    replace: "one another"
     word: true
     propagate_case: true
   - trigger: "'jic"

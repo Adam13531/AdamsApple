@@ -107,6 +107,9 @@ alias approve='spctl --add --label "Approved"'
 # For itch.io deploys
 ensureInPath "$HOME/bin/butler"
 
+# For Steam uploads
+ensureInPath "$HOME/bin/steam/sdk_161/tools/ContentBuilder/builder_osx/"
+
 # Tue 11/24/2020 - 08:41 AM
 # Heck if I'm ever going to remember this.
 # @see http://data.agaric.com/get-git-diff-previous-commit
@@ -422,6 +425,10 @@ function tmp() {
     cd "$myTemp"
     ccd "$@"
 }
+function save() {
+    cd ~/Library/Application\ Support/Skeleseller/save_data
+    ccd "$@"
+}
 function code() {
     cd $extSsdLocation/code
     ccd "$@"
@@ -696,6 +703,12 @@ function gitPushWithAuthSwitch() {
     command git push
 }
 
+# Mon 05/12/2025 - convenience function to profile Skeleseller
+function profileSkeleseller() {
+    cd $extSsdLocation/code/Godot/Skeleseller
+    dotnet-trace collect --format Chromium -o ./profiling/Skeleseller.nettrace -- "/Applications/Godot_mono.app/Contents/MacOS/Godot" --path ./Game
+}
+
 # Tue 06/06/2023 - macOS "find" but excludes directories.
 function findf() {
     local searchPath=$1
@@ -780,3 +793,6 @@ if [ -f '/Users/adam/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/adam/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/adam/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Add .NET Core SDK tools for things like dot-trace
+export PATH="$PATH:/Users/adam/.dotnet/tools"

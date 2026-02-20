@@ -95,3 +95,43 @@ matches:
     replace: "https://store.steampowered.com/app/3226210/Skeleseller"
     word: true
     propagate_case: true
+  - trigger: "'demo"
+    replace: "https://store.steampowered.com/app/3445480/Skeleseller_Demo/"
+    word: true
+    propagate_case: true
+  - trigger: "'press"
+    replace: "https://skeleseller.com/images/Skeleseller-PressKit.zip"
+    word: true
+    propagate_case: true
+  - trigger: "'cm"
+    replace: "Challenge Mode"
+    word: true
+    propagate_case: false
+  - trigger: "'bm"
+    replace: "BONE Mode"
+    word: true
+    propagate_case: false
+  - trigger: "'bone"
+    replace: "Business Optimization via New Expansions"
+    word: true
+    propagate_case: true
+  - trigger: "'bonem"
+    replace: "BONE Mode (Business Optimization via New Expansions)"
+    word: true
+    propagate_case: false
+  - trigger: "'qmm"
+    replace: "Quick Move Menu"
+    word: true
+    propagate_case: false
+  - trigger: "skelesellerappidrelease"
+    replace: "3226210"
+    word: true
+    propagate_case: false
+  - trigger: "skelesellerappiddemo"
+    replace: "3445480"
+    word: true
+    propagate_case: false
+  - trigger: "skelesellerappidplaytest"
+    replace: "3838630"
+    word: true
+    propagate_case: false

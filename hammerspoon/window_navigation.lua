@@ -14,7 +14,6 @@ local mappings = {
   { {"alt"}, "5", "com.googlecode.iterm2"},
   { {"alt"}, "6", "org.keepassxc.keepassxc"},
   { {"alt"}, "D", "com.hnc.Discord"},
-  { {"alt"}, "V", "org.videolan.vlc"},
   { {"alt"}, "O", "com.obsproject.obs-studio"}
 }
 
