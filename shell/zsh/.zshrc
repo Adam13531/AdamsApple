@@ -79,6 +79,7 @@ alias start='open' # "start ." is what you'd type on Windows for "open ." on Uni
 
 # Shortcuts
 alias s='$VISUAL'
+alias r='rider'
 alias k='kubectl'
 alias rgi='rg -i'
 alias bat='bat --theme=OneHalfDark' # https://github.com/sharkdp/bat

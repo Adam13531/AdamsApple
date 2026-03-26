@@ -13,6 +13,7 @@ local mappings = {
   { {"alt"}, "4", "md.obsidian"},
   { {"alt"}, "5", "com.googlecode.iterm2"},
   { {"alt"}, "6", "org.keepassxc.keepassxc"},
+  { {"alt"}, "7", "com.jetbrains.rider"},
   { {"alt"}, "D", "com.hnc.Discord"},
   { {"alt"}, "O", "com.obsproject.obs-studio"}
 }

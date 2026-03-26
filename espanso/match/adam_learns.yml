@@ -82,27 +82,27 @@ matches:
   - trigger: "'ss"
     replace: "Skeleseller"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "'bl"
     replace: "Bot Land"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "'sscom"
     replace: "https://skeleseller.com"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "'steam"
     replace: "https://store.steampowered.com/app/3226210/Skeleseller"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "'demo"
     replace: "https://store.steampowered.com/app/3445480/Skeleseller_Demo/"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "'press"
     replace: "https://skeleseller.com/images/Skeleseller-PressKit.zip"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "'cm"
     replace: "Challenge Mode"
     word: true
@@ -114,7 +114,7 @@ matches:
   - trigger: "'bone"
     replace: "Business Optimization via New Expansions"
     word: true
-    propagate_case: true
+    propagate_case: false
   - trigger: "'bonem"
     replace: "BONE Mode (Business Optimization via New Expansions)"
     word: true
@@ -133,5 +133,13 @@ matches:
     propagate_case: false
   - trigger: "skelesellerappidplaytest"
     replace: "3838630"
+    word: true
+    propagate_case: false
+  - trigger: "'jb"
+    replace: "JetBrains"
+    word: true
+    propagate_case: false
+  - trigger: "'idea"
+    replace: "IntelliJ IDEA"
     word: true
     propagate_case: false
