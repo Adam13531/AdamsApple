@@ -676,6 +676,17 @@ function backUpFiles() {
     rsync -a "$extSsdLocation/AdamLearns/assets" "$oneDriveDir/Adam Learns"
     rsync -a ~/Library/Application\ Support/obs-studio/basic "$oneDriveDir/program settings/OBS"
 
+    local JR_REPO="/Volumes/inland/code/JumpRoyale"
+    local JR_SAVE_FILE="JumpRoyale/save_data/players.json"
+    local modified_files
+    modified_files=$(command git -C "$JR_REPO" diff --name-only)
+    if [[ "$modified_files" == "$JR_SAVE_FILE" ]]; then
+        git -C "$JR_REPO" add "$JR_SAVE_FILE"
+        git -C "$JR_REPO" commit -m "Update players.json"
+    elif [[ -n "$modified_files" ]]; then
+        echo "Skipping JumpRoyale commit: other modified files exist besides $JR_SAVE_FILE"
+    fi
+
     echo "Manual back-ups for now:"
     echo " - Commit and push notes (notes → git add . → git commit → git push, then follow the Starlight instructions for public pushes)"
     echo " - Get Abbott database from mini PC (ssh into it → pg_dump -d postgres://postgres:bar@localhost/foo > ./backup.sql) (scp adam@minipc:~/database_backups/backup.sql \"$oneDriveDir/program settings/Abbott_Database\")"
