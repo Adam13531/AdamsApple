@@ -683,6 +683,7 @@ function backUpFiles() {
     if [[ "$modified_files" == "$JR_SAVE_FILE" ]]; then
         git -C "$JR_REPO" add "$JR_SAVE_FILE"
         git -C "$JR_REPO" commit -m "Update players.json"
+        echo "Don't forget to push the updated Jump Royale repo!"
     elif [[ -n "$modified_files" ]]; then
         echo "Skipping JumpRoyale commit: other modified files exist besides $JR_SAVE_FILE"
     fi
