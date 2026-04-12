@@ -83,6 +83,10 @@ matches:
     replace: "Skeleseller"
     word: true
     propagate_case: false
+  - trigger: "'siabt"
+    replace: "Stuck in a Broken Tutorial"
+    word: true
+    propagate_case: false
   - trigger: "'bl"
     replace: "Bot Land"
     word: true

@@ -442,6 +442,10 @@ function ss() {
     cd $extSsdLocation/code/Godot/Skeleseller
     ccd "$@"
 }
+function bt() {
+    cd $extSsdLocation/code/Godot/StuckInABrokenTutorial
+    ccd "$@"
+}
 function notes() {
     cd "$extSsdLocation/Documents/Obsidian Vaults"
     ccd "$@"
@@ -809,3 +813,6 @@ if [ -f '/Users/adam/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/
 
 # Add .NET Core SDK tools for things like dot-trace
 export PATH="$PATH:/Users/adam/.dotnet/tools"
+
+# Claude Code
+export PATH="$HOME/.local/bin:$PATH"
