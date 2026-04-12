@@ -11,6 +11,7 @@ adamsAppleDir=$codeDir/AdamsApple
 colorizeLocation=$adamsAppleDir/shell/colorize/colorize.py
 ccdLocation=$adamsAppleDir/shell/ccd/ccd.py
 relocateHomepagerizerLocation=$adamsAppleDir/shell/relocate_homepagerizer_homepage/main.py
+streamLauncherLocation=$adamsAppleDir/shell/stream_launcher/main.py
 myTemp=~/tmp
 
 # Commands I never want to have in my history so that I don't have to manually
@@ -154,6 +155,13 @@ function deleteOldVODs() {
     pushd .
     cd "$adamsAppleDir/shell/delete_old_vods" && pnpm start $1
     popd
+}
+
+# Sat 04/12/2026 - 12:00 PM
+# Interactive launcher for streaming tools (StreamTitler, OBSPianoMuteToggle).
+# Opens a new iTerm2 tab per selected tool, titled and colored via the title() function.
+function stream() {
+    python3 $streamLauncherLocation
 }
 
 # Tue 07/15/2014 - 06:36 PM
