@@ -47,19 +47,19 @@ matches:
     replace: "↓"
     word: true
     propagate_case: true
-  - trigger: "'ur"
+  - triggers: ["'ur", "'ru"]
     replace: "↗︎"
     word: true
     propagate_case: true
-  - trigger: "'ul"
+  - triggers: ["'ul", "'lu"]
     replace: "↖"
     word: true
     propagate_case: true
-  - trigger: "'dr"
+  - triggers: ["'dr", "'rd"]
     replace: "↘"
     word: true
     propagate_case: true
-  - trigger: "'dl"
+  - triggers: ["'dl", "'ld"]
     replace: "↙"
     word: true
     propagate_case: true

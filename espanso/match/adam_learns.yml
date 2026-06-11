@@ -83,7 +83,7 @@ matches:
     replace: "Skeleseller"
     word: true
     propagate_case: false
-  - trigger: "'siabt"
+  - triggers: ["'siabt", "'bt"]
     replace: "Stuck in a Broken Tutorial"
     word: true
     propagate_case: false
