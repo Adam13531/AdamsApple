@@ -15,6 +15,10 @@ defaults write NSGlobalDomain AppleInterfaceStyle Dark
 # so that people know how long a page/document is.
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
+# Enable System Settings → Keyboard → Keyboard navigation for tabbing between UI
+# elements
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+
 # Jump to the scroll-bar spot that was clicked.
 defaults write NSGlobalDomain AppleScrollerPagingBehavior -bool true
 
