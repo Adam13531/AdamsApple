@@ -695,7 +695,7 @@ function backUpFiles() {
     if [[ "$modified_files" == "$JR_SAVE_FILE" ]]; then
         git -C "$JR_REPO" add "$JR_SAVE_FILE"
         git -C "$JR_REPO" commit -m "Update players.json"
-        echo "Don't forget to push the updated Jump Royale repo!"
+        echo "Don't forget to push the updated Jump Royale repo! code Jump → git push"
     elif [[ -n "$modified_files" ]]; then
         echo "Skipping JumpRoyale commit: other modified files exist besides $JR_SAVE_FILE"
     fi
@@ -769,6 +769,7 @@ function changeOBSScene() {
 # Added as part of https://github.com/godotengine/godot-csharp-vscode/issues/43#issuecomment-1258321229
 # (so that I can debug Godot through VSCode)
 export GODOT4="/Applications/Godot_mono.app/Contents/MacOS/Godot"
+export GODOT=$GODOT4
 
 # Prezto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
