@@ -705,29 +705,6 @@ function backUpFiles() {
     echo " - Get Abbott database from mini PC (ssh into it → pg_dump -d postgres://postgres:bar@localhost/foo > ./backup.sql) (scp adam@minipc:~/database_backups/backup.sql \"$oneDriveDir/program settings/Abbott_Database\")"
 }
 
-# Thu 02/22/2024 - 10:06 AM - detect "git push", and when it fails, switch the
-# user that I'm logged in as. This is because I push as two different identities
-# and hit this issue at least once per week.
-function git() {
-    if [[ $@ == "push" ]]; then
-        gitPushWithAuthSwitch
-    else
-        # Note that "command" is necessary to avoid infinite recursion.
-        command git $@
-    fi
-}
-
-function gitPushWithAuthSwitch() {
-    command git push
-    if [[ $? -eq 0 ]]; then
-        return
-    fi
-
-    colorize "^rPush failed. Switching auth and trying again."
-    gh auth switch
-    command git push
-}
-
 # Mon 05/12/2025 - convenience function to profile Skeleseller
 function profileSkeleseller() {
     cd $extSsdLocation/code/Godot/Skeleseller
