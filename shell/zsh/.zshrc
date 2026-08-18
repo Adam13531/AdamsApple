@@ -435,7 +435,8 @@ function tmp() {
     ccd "$@"
 }
 function save() {
-    cd ~/Library/Application\ Support/Skeleseller/save_data
+    # cd ~/Library/Application\ Support/Skeleseller/save_data
+    cd ~/Library/Application\ Support/Godot/app_userdata/Stuck\ in\ a\ Broken\ Tutorial/save_data
     ccd "$@"
 }
 function code() {

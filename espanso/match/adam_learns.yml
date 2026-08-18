@@ -95,8 +95,20 @@ matches:
     replace: "https://skeleseller.com"
     word: true
     propagate_case: false
-  - trigger: "'steam"
+  - trigger: "'siabtcom"
+    replace: "https://stuckinabrokentutorial.com"
+    word: true
+    propagate_case: false
+  - triggers: ["'xcom", "'xtonomous"]
+    replace: "https://xtonomous.com"
+    word: true
+    propagate_case: false
+  - trigger: "'sssteam"
     replace: "https://store.steampowered.com/app/3226210/Skeleseller"
+    word: true
+    propagate_case: false
+  - triggers: ["'siabtsteam", "'steam"]
+    replace: "https://store.steampowered.com/app/5071880/Stuck_in_a_Broken_Tutorial/"
     word: true
     propagate_case: false
   - trigger: "'demo"

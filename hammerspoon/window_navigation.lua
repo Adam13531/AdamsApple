@@ -16,6 +16,7 @@ local mappings = {
   { {"alt"}, "7", "com.jetbrains.rider"},
   { {"alt"}, "8", "org.godotengine.godot"},
   { {"alt"}, "D", "com.hnc.Discord"},
+  { {"alt"}, "X", "com.openai.codex"},
   { {"alt"}, "O", "com.obsproject.obs-studio"}
 }
 
