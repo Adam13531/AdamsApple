@@ -8,19 +8,17 @@
 -- have something sensitive on my clipboard)
 hs.hotkey.bind({"cmd", "ctrl", "alt", "shift"}, "V", function()
   local pasteboard = hs.pasteboard.getContents()
-  local finalString = ""
-  local split = {}
-  for line in string.gmatch(pasteboard, "[^\n]+") do
-    table.insert(split, line)
+  local messages = {}
+  for line in string.gmatch(pasteboard, "[^\r\n]+") do
     local actualMessage = string.match(line, "^%d+:%d%d(.*)")
     if actualMessage == nil then
-      finalString = finalString .. "\n" .. line
+      table.insert(messages, line)
     else
-      finalString = finalString .. "\n" .. actualMessage
+      table.insert(messages, actualMessage)
     end
   end
 
-  hs.pasteboard.setContents(finalString)
+  hs.pasteboard.setContents(table.concat(messages, "\n"))
 
   hs.alert.show("Formatted Twitch chat. Don't forget to press ⌘V!")
 end)
