@@ -699,6 +699,10 @@ matches:
     replace: "one another"
     word: true
     propagate_case: true
+  - trigger: "'pm"
+    replace: "Photosensitivity Mode"
+    word: true
+    propagate_case: true
   - trigger: "'jic"
     replace: "just in case"
     word: true

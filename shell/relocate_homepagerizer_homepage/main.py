@@ -2,7 +2,8 @@
 
 # Tue 02/22/2022 - 01:30 PM - this is intended to be run with no
 # arguments. It will copy a homepage file like "homepage (12).html" from
-# Downloads to the proper homepage directory.
+# Downloads to the proper homepage directory. I use it via my zsh function named
+# "updateHomepage".
 
 import os
 import shutil

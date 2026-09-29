@@ -104,11 +104,15 @@ matches:
     word: true
     propagate_case: false
   - trigger: "'sssteam"
-    replace: "https://store.steampowered.com/app/3226210/Skeleseller"
+    replace: "https://store.steampowered.com/app/3226210/Skeleseller/?utm_source=AdamTwitch"
     word: true
     propagate_case: false
   - triggers: ["'siabtsteam", "'steam"]
-    replace: "https://store.steampowered.com/app/5071880/Stuck_in_a_Broken_Tutorial/"
+    replace: "https://store.steampowered.com/app/5071880/Stuck_in_a_Broken_Tutorial/?utm_source=AdamTwitch"
+    word: true
+    propagate_case: false
+  - triggers: ["'steamutm"]
+    replace: "https://store.steampowered.com/app/5071880/Stuck_in_a_Broken_Tutorial/?utm_source=AdamPastedThisToSomeone"
     word: true
     propagate_case: false
   - trigger: "'demo"
@@ -157,5 +161,9 @@ matches:
     propagate_case: false
   - trigger: "'idea"
     replace: "IntelliJ IDEA"
+    word: true
+    propagate_case: false
+  - trigger: "'final"
+    replace: "[FINAL PROMPT]"
     word: true
     propagate_case: false

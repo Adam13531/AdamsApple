@@ -731,6 +731,12 @@ function godotServer() {
     "/Applications/Godot.app/Contents/MacOS/Godot" --path $path --headless
 }
 
+# Tue 09/22/2026 - sick of using voice commands and waiting around like an idiot
+function startJumpTime() {
+ changeOBSScene "Stream game"
+ $GODOT4 --path /Volumes/inland/code/JumpRoyale/JumpRoyale
+}
+
 function changeOBSScene() {
     local sceneName=$1
     if [[ "$sceneName" == "" ]]; then
@@ -742,6 +748,11 @@ function changeOBSScene() {
     cd /Volumes/inland/code/OBSWebSocketClient
     NODE_ENV=development pnpm start $sceneName
     popd
+}
+
+# ~/Documents/AI/codex_usage_logger.py generates this
+function ai() {
+  head -n 15 "$HOME/Documents/AI/ai_usage.txt"
 }
 
 # Added as part of https://github.com/godotengine/godot-csharp-vscode/issues/43#issuecomment-1258321229
