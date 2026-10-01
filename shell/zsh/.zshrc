@@ -733,20 +733,20 @@ function godotServer() {
 
 # Tue 09/22/2026 - sick of using voice commands and waiting around like an idiot
 function startJumpTime() {
- changeOBSScene "Stream game"
+ changeOBSScene "Stream game" --mute "Mic/Aux"
  $GODOT4 --path /Volumes/inland/code/JumpRoyale/JumpRoyale
 }
 
 function changeOBSScene() {
     local sceneName=$1
     if [[ "$sceneName" == "" ]]; then
-        colorize "^rUsage: changeOBSScene <scene name>"
+        colorize "^rUsage: changeOBSScene <scene name> [--mute <input name>]"
         return
     fi
 
     pushd .
     cd /Volumes/inland/code/OBSWebSocketClient
-    NODE_ENV=development pnpm start $sceneName
+    NODE_ENV=development pnpm start "$@"
     popd
 }
 
